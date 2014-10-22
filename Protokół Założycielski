@@ -1,22 +1,22 @@
 ﻿PROTOKÓŁ ZAŁOŻYCIELSKI
 
-W dniu 16.10.2014 roku w Koszalinie odbyło się zebranie osób mających na celu utworzenie grupy projektowej.
+W dniu 19.10.2013 roku w Koszalinie odbyło się zebranie osób mających na celu utworzenie grupy projektowej.
 
 Obecni na zebraniu:
-Łukasz Flak
 Paweł Bieżuński
+Łukasz Flak
 Tomasz Barański
 po zapoznaniu się z potrzebami oraz wymaganiami klienta, ustalili że:
 
 § 1 Grupa projektowa składa się z trzech członków:
-	Łukasz Flak
-	Paweł Bieżuński
-	Tomasz Barański
+Paweł Bieżuński
+Łukasz Flak
+Tomasz Barański
 
 § 1.1  Poszczególnym członkom zostają przydzielone następujące role:
 Łukasz Flak – kierownik projektu, programista
-Tomasz Barański - programista 
-Paweł Bieżuński- dokumentalista, tester
+	Tomasz Barański - programista
+Paweł Bieżuński - dokumentalista, tester
 
 § 1.2  Do obowiązków poszczególnych członków należy:
 Kierownik projektu:
@@ -39,10 +39,10 @@ Tester:
 § 2.1  Projekt będzie realizowany w oparciu o standardy inżynierii oprogramowania.
 § 2.2  Za zakończenie realizacji projektu uznaje się ukończenie wszystkich etapów projektowania i wdrożenie aplikacji u klienta.
 § 2.3  W przypadku nie ukończenia projektu w przewidywanym terminie ustalony zostaje termin ostateczny na 20.01.2015 r.
-§ 3  Celem projektu jest stworzenie aplikacji o nazwie KwadrateX, będącą nawiązaniem do popularnej zabawki Tomagotchi.
-§ 3.1 Aplikacja wstępnie jest realizowana na potrzeby dzieci i młodzieży, zapotrzebowanie na rynku na taką aplikację jest bardzo wysokie.
+§ 3  Celem projektu jest stworzenie aplikacji o nazwie KwadrateX, będącej odwzorowaniem popularnej w Japonii zabawki Tamagotchi.
+§ 3.1 Aplikacja wstępnie jest realizowana na sprzedaż jako gra dla dzieci w wieku szkolnym, rozwijające zachowania opiekuńcze, regularność, odpowiedzialność itp.
 § 3.2 Aplikacja będzie realizowana w języku Java, przy użyciu środowiska Eclipse.
-§ 3.3 Repozytorium aplikacji znajduje się na serwerze sourceforge.net pod nazwą KwadrateX
+§ 3.3 Repozytorium aplikacji znajduje się na serwerze github.com pod nazwą KwadrateX.
 
 § 4  W celu utrzymania dyscypliny w zespole ustalony zostaje kar dyscyplinarnych:
 § 4.1 Za zachowania utrudniające realizacje projektu, przede wszystkim nie wywiązywanie się w terminie z powierzonego przez kierownika projektu zadania bez usprawiedliwionej przyczyny, członek grupy otrzymuje Ostrzeżenie.
@@ -56,5 +56,4 @@ Tester:
 § 5.2 Każdy członek grupy ma prawo zgłaszać swoje uwagi odnośnie wykonywanych zadań (zarówno swoich jak i pozostałych członków grupy) do kierownika projektu, który z kolei zobowiązany jest poddać owe uwagi pod zespołową dyskusję.
 
  
-
 
