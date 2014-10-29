@@ -1,0 +1,11 @@
+harmonogram - co jak i kiedy 
+
+na 3 spotkanie:
+diagram przypadku u¿ycia ( aktorzy, w uml ) 
+specyfikacja funkcjonalna ( 10 funkcji ) 
+
+
+
+
+
+na ocene 5 REPOZYTORIUM
