@@ -1,3 +1,8 @@
+package interfejsy;
+
+import generatoryEkranow.oknoEkranuGlownego;
+import main.okno;
+
 /**
  * Interfejs zawierajacy referencje do obiektow
  * 

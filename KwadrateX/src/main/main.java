@@ -1,3 +1,7 @@
+package main;
+
+import interfejsy.obiekty;
+
 /**
  * Główna klasa naszej gry KwadrateX
  * 

@@ -1,3 +1,7 @@
+package main;
+import interfejsy.obiekty;
+import interfejsy.zmienneGlobalne;
+
 import java.awt.Dimension;
 
 import javax.swing.JFrame;

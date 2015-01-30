@@ -1,18 +1,33 @@
+package generatoryEkranow;
+import interfejsy.zmienneGlobalne;
+
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.JPanel;
 
+import klasyPomocnicze.kwadratexPrzycisk;
+import klasyPomocnicze.obrazek;
+
 /**
- * Klasa tworząca ekran Menu Głównego
+ * Klasa tworzaca ekran menu Glownego
  * 
  * @author Lukasz
  *
  */
-public class oknoEkranuGlownego extends JPanel implements zmienneGlobalne{
+public class oknoEkranuGlownego extends JPanel implements zmienneGlobalne, ActionListener{
 	
 	private int szerokoscOkna = szerokoscAplikacji;
 	private int wysokoscOkna = wysokoscAplikacji;
 	private Color kolorTla;
+	
+	//Przyciski w obrebie ekranu
+	private kwadratexPrzycisk przyciskNowaGra = new kwadratexPrzycisk(165,250,150,46,"Nowa gra");
+	private kwadratexPrzycisk przyciskKontynuuj = new kwadratexPrzycisk(160,300,160,46,"Kontynuuj");
+	private kwadratexPrzycisk przyciskWyjdz = new kwadratexPrzycisk(185,350,110,46,"Wyjdz");
 	
 	/*
 	 * Konstruktor ustawia layout i rozmiar danego ekranu (nie zmieniamy tego!)
@@ -26,6 +41,8 @@ public class oknoEkranuGlownego extends JPanel implements zmienneGlobalne{
 	 * Metoda dodaje komponenty do Ekranu Głównego
 	 */
 	public void dodajKomponentyEkranuGlownego(){
+		this.dodajPrzyciskiEkranuGlownego();
+		
 		this.dodajGrafikeWTleEkranuGlownego();
 	}
 	
@@ -47,6 +64,17 @@ public class oknoEkranuGlownego extends JPanel implements zmienneGlobalne{
 		this.add(obszarNaPrzyciski);
 		this.add(zajawkaEkranGlowny);
 	}
+	/*
+	 * Metoda dodaje przycsiki dla ekranu g��wnego
+	 */
+	public void dodajPrzyciskiEkranuGlownego(){
+		this.add(this.przyciskNowaGra);
+		this.add(this.przyciskKontynuuj);
+		this.add(this.przyciskWyjdz);
+		
+		this.przyciskNowaGra.addActionListener(this);
+		this.przyciskWyjdz.addActionListener(this);
+	}
 	
 	/*
 	 * Metoda tworzy Ekran Głowny
@@ -58,5 +86,27 @@ public class oknoEkranuGlownego extends JPanel implements zmienneGlobalne{
 		
 		this.setBackground(this.kolorTla);
 		this.setVisible(true);
+	}
+	
+	/*
+	 * Tutaj sa akcje dla przyciskow ekranu glownego
+	 * (non-Javadoc)
+	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
+	 */
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		Object source = e.getSource();
+		
+		//akcja dla przycisku wyjdz
+		if(source == this.przyciskWyjdz){
+			System.exit(0);
+		}
+		
+		//akcja dla przycisku nowa gra
+		if(source == this.przyciskNowaGra){
+			//ukrywamy ekran glownego menu
+			this.setVisible(false);
+		}
+		
 	}
 }

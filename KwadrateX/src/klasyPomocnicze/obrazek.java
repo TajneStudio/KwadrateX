@@ -1,3 +1,6 @@
+package klasyPomocnicze;
+import interfejsy.zmienneGlobalne;
+
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -49,7 +52,7 @@ public class obrazek extends Component implements zmienneGlobalne{
 	public void obslugaBlednejPozycji(){
 		if(this.pozycjaX < 0){
 			System.out.println();
-			System.out.println("-----------OBIEKT KLASY obrazek NIE MIEŚCI SIĘ W OKNIE!-----------");
+			System.out.println("-----------OBIEKT KLASY obrazek NIE MIEŚCI SI�? W OKNIE!-----------");
 			System.out.println("Element : ("+this.imageSrc+") nie mieści się w widocznym oknie!");
 			System.out.println("Maksymalny X dla elementu : ("+this.imageSrc+") to X = 0");
 			System.out.println("------------------------------------------------------------------");
@@ -57,7 +60,7 @@ public class obrazek extends Component implements zmienneGlobalne{
 		}
 		if(this.pozycjaX > this.maksymalnyX){
 			System.out.println();
-			System.out.println("-----------OBIEKT KLASY obrazek NIE MIEŚCI SIĘ W OKNIE!-----------");
+			System.out.println("-----------OBIEKT KLASY obrazek NIE MIEŚCI SI�? W OKNIE!-----------");
 			System.out.println("Element : ("+this.imageSrc+") nie mieści się w widocznym oknie!");
 			System.out.println("Maksymalny X dla elementu : ("+this.imageSrc+") to X = "+this.maksymalnyX);
 			System.out.println("------------------------------------------------------------------");
@@ -65,7 +68,7 @@ public class obrazek extends Component implements zmienneGlobalne{
 		}
 		if(this.pozycjaY < 0){
 			System.out.println();
-			System.out.println("-----------OBIEKT KLASY obrazek NIE MIEŚCI SIĘ W OKNIE!-----------");
+			System.out.println("-----------OBIEKT KLASY obrazek NIE MIEŚCI SI�? W OKNIE!-----------");
 			System.out.println("Element : ("+this.imageSrc+") nie mieści się w widocznym oknie!");
 			System.out.println("Maksymalny Y dla elementu : ("+this.imageSrc+") to Y = 0");
 			System.out.println("------------------------------------------------------------------");
@@ -73,7 +76,7 @@ public class obrazek extends Component implements zmienneGlobalne{
 		}
 		if(this.pozycjaY > this.maksymalnyY){
 			System.out.println();
-			System.out.println("-----------OBIEKT KLASY obrazek NIE MIEŚCI SIĘ W OKNIE!-----------");
+			System.out.println("-----------OBIEKT KLASY obrazek NIE MIEŚCI SI�? W OKNIE!-----------");
 			System.out.println("Element : ("+this.imageSrc+") nie mieści się w widocznym oknie!");
 			System.out.println("Maksymalny Y dla elementu : ("+this.imageSrc+") to Y = "+this.maksymalnyY);
 			System.out.println("------------------------------------------------------------------");

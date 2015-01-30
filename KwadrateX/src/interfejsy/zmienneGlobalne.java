@@ -1,3 +1,4 @@
+package interfejsy;
 /**
  * Interfjes zawierający zmienne Globalne gry
  * 
