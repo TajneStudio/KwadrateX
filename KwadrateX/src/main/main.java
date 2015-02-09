@@ -1,6 +1,6 @@
 package main;
 
-import interfejsy.obiekty;
+import interfejsy.obiektyEkranow;
 
 /**
  * Główna klasa naszej gry KwadrateX
@@ -8,7 +8,7 @@ import interfejsy.obiekty;
  * @author Lukasz
  *
  */
-public class main implements obiekty{
+public class main implements obiektyEkranow{
 	
 	/*
 	 * Główna pętla gry

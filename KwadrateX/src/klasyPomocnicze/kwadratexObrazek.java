@@ -11,7 +11,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 
-public class obrazek extends Component implements zmienneGlobalne{
+public class kwadratexObrazek extends Component implements zmienneGlobalne{
 	
 	private int pozycjaX;
 	private int maksymalnyX;
@@ -30,7 +30,7 @@ public class obrazek extends Component implements zmienneGlobalne{
 	/*
 	 * Konstruktor tworzacy obrazek na danym x i y
 	 */
-	public obrazek(int x, int y, String zrodloDopliku){
+	public kwadratexObrazek(int x, int y, String zrodloDopliku){
 		this.imageSrc = zrodloDopliku;
 		this.pobierzObrazek();
 		

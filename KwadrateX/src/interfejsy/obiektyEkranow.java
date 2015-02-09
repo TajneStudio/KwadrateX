@@ -12,7 +12,7 @@ import main.okno;
  * @author Lukasz
  *
  */
-public interface obiekty {
+public interface obiektyEkranow {
 	okno oknoGry = new okno();
 	oknoEkranuGlownego ekranGlowny = new oknoEkranuGlownego();
 }

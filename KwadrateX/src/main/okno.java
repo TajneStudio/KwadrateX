@@ -1,5 +1,5 @@
 package main;
-import interfejsy.obiekty;
+import interfejsy.obiektyEkranow;
 import interfejsy.zmienneGlobalne;
 
 import java.awt.Dimension;
@@ -11,7 +11,7 @@ import javax.swing.JFrame;
  * @author Lukasz
  *
  */
-public class okno extends JFrame implements zmienneGlobalne, obiekty{
+public class okno extends JFrame implements zmienneGlobalne, obiektyEkranow{
 	
 	private int szerokosc = szerokoscAplikacji;
 	private int wysokosc = wysokoscAplikacji;

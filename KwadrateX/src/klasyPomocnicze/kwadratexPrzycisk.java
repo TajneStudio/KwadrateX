@@ -1,5 +1,7 @@
 package klasyPomocnicze;
 
+import interfejsy.obiektyCzcionek;
+
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Font;
@@ -20,12 +22,11 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 
 
-public class kwadratexPrzycisk extends JButton{
+public class kwadratexPrzycisk extends JButton implements obiektyCzcionek{
 	private int szerokosc_przycsiku;
 	private int wysokosc_przycsiku;
 	private int pozycjaX;
 	private int pozycjaY;
-	private Font fontPrzycisku;
 	private String tekst_przycisku;
 	
 	public kwadratexPrzycisk(int x, int y, int szerokosc, int wysokosc, String tekstButtona){
@@ -37,8 +38,7 @@ public class kwadratexPrzycisk extends JButton{
 		
 		this.ustawPozycjeKomponentu();
 		
-		this.wczytaj_font();
-		this.setFont(fontPrzycisku);
+		this.setFont(fontGry.getFont());
 		
 		this.setOpaque(false);
 		this.setContentAreaFilled(false);
@@ -52,19 +52,6 @@ public class kwadratexPrzycisk extends JButton{
 		
 		this.uruchom_najechanie_na_przycisk_akcja();
 		
-	}
-	
-	public void wczytaj_font(){
-		try {
-			this.fontPrzycisku = fontPrzycisku.createFont(Font.TRUETYPE_FONT, new FileInputStream("src/fonty/FontleroyBrown.ttf"));
-		} catch (FontFormatException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		this.fontPrzycisku = this.fontPrzycisku.deriveFont(46f);
 	}
 	/*
 	 * Metoda ustawia pozycje Komponentu na JButton

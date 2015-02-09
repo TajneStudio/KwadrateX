@@ -1,16 +1,14 @@
 package generatoryEkranow;
+import interfejsy.obiektyGraficzne;
 import interfejsy.zmienneGlobalne;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 
 import javax.swing.JPanel;
 
 import klasyPomocnicze.kwadratexPrzycisk;
-import klasyPomocnicze.obrazek;
 
 /**
  * Klasa tworzaca ekran menu Glownego
@@ -18,7 +16,7 @@ import klasyPomocnicze.obrazek;
  * @author Lukasz
  *
  */
-public class oknoEkranuGlownego extends JPanel implements zmienneGlobalne, ActionListener{
+public class oknoEkranuGlownego extends JPanel implements zmienneGlobalne, ActionListener, obiektyGraficzne{
 	
 	private int szerokoscOkna = szerokoscAplikacji;
 	private int wysokoscOkna = wysokoscAplikacji;
@@ -50,13 +48,6 @@ public class oknoEkranuGlownego extends JPanel implements zmienneGlobalne, Actio
 	 * Metoda dodaje grafike w tle dla Ekranu Głównego
 	 */
 	public void dodajGrafikeWTleEkranuGlownego(){
-		obrazek prawyGornyRog = new obrazek(409,0,"src/obrazki/ekranGlowny/prawyGornyRog.png");
-		obrazek prawyDolnyRog = new obrazek(288,514,"src/obrazki/ekranGlowny/prawyDolnyRog.png");
-		obrazek lewyDolnyRog = new obrazek(0,568,"src/obrazki/ekranGlowny/lewyDolnyRog.png");
-		obrazek logoGry = new obrazek(97,24,"src/obrazki/ekranGlowny/logoGry.png");
-		obrazek obszarNaPrzyciski = new obrazek(104,218,"src/obrazki/ekranGlowny/obszarNaPrzyciski.png");
-		obrazek zajawkaEkranGlowny = new obrazek(63,429,"src/obrazki/ekranGlowny/zajawkaEkranGlowny.png");
-		
 		this.add(prawyGornyRog);
 		this.add(prawyDolnyRog);
 		this.add(lewyDolnyRog);
