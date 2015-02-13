@@ -51,7 +51,6 @@ public class kwadratexPrzycisk extends JButton implements obiektyCzcionek{
 		this.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		
 		this.uruchom_najechanie_na_przycisk_akcja();
-		
 	}
 	/*
 	 * Metoda ustawia pozycje Komponentu na JButton

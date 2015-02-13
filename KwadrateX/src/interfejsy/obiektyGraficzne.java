@@ -12,5 +12,10 @@ public interface obiektyGraficzne {
 	kwadratexObrazek logoGry = new kwadratexObrazek(97,24,"src/obrazki/ekranGlowny/logoGry.png");
 	kwadratexObrazek obszarNaPrzyciski = new kwadratexObrazek(104,218,"src/obrazki/ekranGlowny/obszarNaPrzyciski.png");
 	kwadratexObrazek zajawkaEkranGlowny = new kwadratexObrazek(63,429,"src/obrazki/ekranGlowny/zajawkaEkranGlowny.png");
-	
+	/*
+	 * Obiekty graficzne dla EkranuPomieszczen
+	 */
+	kwadratexObrazek lewyGornyRog = new kwadratexObrazek(0,0,"src/obrazki/ekranPomieszczen/lewyGornyRog.png");
+	kwadratexObrazek prawyDolnyRog_Rama = new kwadratexObrazek(409,568,"src/obrazki/ekranPomieszczen/prawyDolnyRog_Rama.png");
+	kwadratexObrazek sliderLokalizacji = new kwadratexObrazek(94,562,"src/obrazki/ekranPomieszczen/sliderLokalizacji.png");
 }

@@ -1,6 +1,7 @@
 package interfejsy;
 
 import generatoryEkranow.oknoEkranuGlownego;
+import generatoryEkranow.oknoEkranuPomieszczen;
 import main.okno;
 
 /**
@@ -15,4 +16,5 @@ import main.okno;
 public interface obiektyEkranow {
 	okno oknoGry = new okno();
 	oknoEkranuGlownego ekranGlowny = new oknoEkranuGlownego();
+	oknoEkranuPomieszczen ekranPomieszczen = new oknoEkranuPomieszczen();
 }

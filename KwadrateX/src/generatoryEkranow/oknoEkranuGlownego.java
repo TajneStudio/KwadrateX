@@ -1,4 +1,5 @@
 package generatoryEkranow;
+import interfejsy.obiektyEkranow;
 import interfejsy.obiektyGraficzne;
 import interfejsy.zmienneGlobalne;
 
@@ -16,7 +17,7 @@ import klasyPomocnicze.kwadratexPrzycisk;
  * @author Lukasz
  *
  */
-public class oknoEkranuGlownego extends JPanel implements zmienneGlobalne, ActionListener, obiektyGraficzne{
+public class oknoEkranuGlownego extends JPanel implements zmienneGlobalne, ActionListener, obiektyGraficzne, obiektyEkranow{
 	
 	private int szerokoscOkna = szerokoscAplikacji;
 	private int wysokoscOkna = wysokoscAplikacji;
@@ -36,7 +37,7 @@ public class oknoEkranuGlownego extends JPanel implements zmienneGlobalne, Actio
 	}
 	
 	/*
-	 * Metoda dodaje komponenty do Ekranu Głównego
+	 * Metoda dodaje komponenty do Ekranu Glownego
 	 */
 	public void dodajKomponentyEkranuGlownego(){
 		this.dodajPrzyciskiEkranuGlownego();
@@ -68,7 +69,7 @@ public class oknoEkranuGlownego extends JPanel implements zmienneGlobalne, Actio
 	}
 	
 	/*
-	 * Metoda tworzy Ekran Głowny
+	 * Metoda tworzy Ekran Glowny
 	 */
 	public void stworzEkranGlowny(){
 		this.dodajKomponentyEkranuGlownego();
@@ -97,6 +98,7 @@ public class oknoEkranuGlownego extends JPanel implements zmienneGlobalne, Actio
 		if(source == this.przyciskNowaGra){
 			//ukrywamy ekran glownego menu
 			this.setVisible(false);
+			ekranPomieszczen.setVisible(true);
 		}
 		
 	}

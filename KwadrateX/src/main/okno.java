@@ -34,6 +34,9 @@ public class okno extends JFrame implements zmienneGlobalne, obiektyEkranow{
 	public void dodajEkrany(){
 		this.add(ekranGlowny);
 		ekranGlowny.stworzEkranGlowny();
+		
+		this.add(ekranPomieszczen);
+		ekranPomieszczen.stworzEkranPomieszczen();
 	}
 	
 	/*
