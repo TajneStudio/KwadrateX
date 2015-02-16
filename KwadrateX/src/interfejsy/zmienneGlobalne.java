@@ -12,4 +12,6 @@ public interface zmienneGlobalne {
 	String tytulGry = "KwadrateX";
 	int szerokoscAplikacji = 480;
 	int wysokoscAplikacji = 640;
+	
+	int wysokoscEkranuStworka = 501;
 }

@@ -1,5 +1,6 @@
 package generatoryEkranow;
 
+import interfejsy.obiektyEkranow;
 import interfejsy.obiektyGraficzne;
 import interfejsy.zmienneGlobalne;
 
@@ -9,7 +10,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JPanel;
 
-public class oknoEkranuPomieszczen extends JPanel implements zmienneGlobalne, ActionListener, obiektyGraficzne{
+public class oknoEkranuPomieszczen extends JPanel implements zmienneGlobalne, ActionListener, obiektyGraficzne, obiektyEkranow{
 	
 	private int szerokoscOkna = szerokoscAplikacji;
 	private int wysokoscOkna = wysokoscAplikacji;
@@ -27,8 +28,18 @@ public class oknoEkranuPomieszczen extends JPanel implements zmienneGlobalne, Ac
 	 * Metoda dodaje komponenty do Ekranu Pomieszczen
 	 */
 	public void dodajKomponentyEkranuGlownego(){
+		this.dodajEkranStworka();
+		
 		this.dodajPrzyciskiEkranuPomieszczen();
 		this.dodajGrafikeWTleEkranuPomieszczen();
+	}
+	
+	/*
+	 * Metoda dodaje ekran stworka
+	 */
+	public void dodajEkranStworka(){
+		ekranStworka.stworzEkranStworka();
+		this.add(ekranStworka);
 	}
 	
 	/*

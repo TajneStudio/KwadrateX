@@ -2,8 +2,6 @@ package main;
 import interfejsy.obiektyEkranow;
 import interfejsy.zmienneGlobalne;
 
-import java.awt.Dimension;
-
 import javax.swing.JFrame;
 /**
  * Klasa tworząca Główne oknno gry

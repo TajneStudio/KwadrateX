@@ -4,22 +4,9 @@ import interfejsy.obiektyCzcionek;
 
 import java.awt.Color;
 import java.awt.Cursor;
-import java.awt.Font;
-import java.awt.FontFormatException;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Rectangle;
-import java.awt.RenderingHints;
-import java.awt.Shape;
-import java.awt.font.FontRenderContext;
-import java.awt.font.TextLayout;
-import java.awt.geom.AffineTransform;
-import java.io.FileInputStream;
-import java.io.IOException;
 
 import javax.swing.JButton;
-import javax.swing.JComponent;
-import javax.swing.JFrame;
 
 
 public class kwadratexPrzycisk extends JButton implements obiektyCzcionek{

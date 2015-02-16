@@ -17,5 +17,11 @@ public interface obiektyGraficzne {
 	 */
 	kwadratexObrazek lewyGornyRog = new kwadratexObrazek(0,0,"src/obrazki/ekranPomieszczen/lewyGornyRog.png");
 	kwadratexObrazek prawyDolnyRog_Rama = new kwadratexObrazek(409,568,"src/obrazki/ekranPomieszczen/prawyDolnyRog_Rama.png");
-	kwadratexObrazek sliderLokalizacji = new kwadratexObrazek(94,562,"src/obrazki/ekranPomieszczen/sliderLokalizacji.png");
+	kwadratexObrazek sliderLokalizacji = new kwadratexObrazek(94,564,"src/obrazki/ekranPomieszczen/sliderLokalizacji.png");
+	
+	/*
+	 * Obiekty graficzne dla EKRANU STWORKA (chodzi glownie o ramke[narazie])
+	 */
+	kwadratexObrazek ekranStworkaRamaGora = new kwadratexObrazek(0,0,"src/obrazki/ekranStworka/ekranStworkaRamaGora.png");
+	kwadratexObrazek ekranStworkaRamaDol = new kwadratexObrazek(0,495,"src/obrazki/ekranStworka/ekranStworkaRamaDol.png");
 }
