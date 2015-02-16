@@ -1,4 +1,5 @@
 package main;
+
 import interfejsy.obiektyEkranow;
 import interfejsy.zmienneGlobalne;
 
@@ -24,6 +25,11 @@ public class okno extends JFrame implements zmienneGlobalne, obiektyEkranow{
 		this.setLocationRelativeTo(null);
 		this.setResizable(false);
 		this.setTitle(this.tytulGry);
+		
+		this.addKeyListener(klawiaturaListener);
+		this.setFocusable(true);
+		
+		this.dodajTimerGry();
 	}
 	
 	/*
@@ -37,11 +43,14 @@ public class okno extends JFrame implements zmienneGlobalne, obiektyEkranow{
 		ekranPomieszczen.stworzEkranPomieszczen();
 	}
 	
+	public void dodajTimerGry(){
+		zegarGry.schedule(glowneZadania, 0, 8);
+	}
+	
 	/*
 	 * Metoda wyswietla okno Gry
 	 */
 	public void wyswietlOknoGry(){
 		this.setVisible(true);
 	}
-	
 }

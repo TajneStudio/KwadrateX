@@ -1,4 +1,11 @@
 package interfejsy;
+
+import java.util.Timer;
+
+import listenery.klawiaturaOpcje;
+import stworek.stworek;
+import timery.glowneZadanieTimera;
+
 /**
  * Interfjes zawierający zmienne Globalne gry
  * 
@@ -14,4 +21,15 @@ public interface zmienneGlobalne {
 	int wysokoscAplikacji = 640;
 	
 	int wysokoscEkranuStworka = 501;
+	
+	//stworek
+	stworek stworekUsera = new stworek(70,70);
+	
+	//obsluga zdarzen klawiatury
+	klawiaturaOpcje klawiaturaListener = new klawiaturaOpcje();
+	
+	//timer
+	Timer zegarGry = new Timer();
+	//zadania timera
+	glowneZadanieTimera glowneZadania = new glowneZadanieTimera();
 }
