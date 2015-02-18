@@ -8,7 +8,10 @@ import javax.swing.JPanel;
 /**
  * Klasa zrobiona narazie na potrzeby malego stworka, duzy nie jest brany pod uwage!
  * 
- * @author Alien
+ * TO DO:
+ * -Rozbudowa tej klasy, jest ona narazie w bardzo wczesnej fazie
+ * 
+ * @author Lukasz Flak
  *
  */
 public class stworek extends JPanel{
@@ -38,26 +41,43 @@ public class stworek extends JPanel{
 	
 	/*
 	 * Metoda stawia stworka w odpowiednim miejscu na mapie
+	 * wywolana po raz kolejny po zmianie x i y zmienia pozycje stworka
 	 */
 	public void aktualizujPozycjeStworka(){
 		this.setBounds(this.pozycjaX, this.pozycjaY, this.szerokoscStworkaMalego, this.wysokoscStworkaMalego);
 	}
 	
+	/*
+	 * Metoda obsluguje chodzenie stworka
+	 * w prawo
+	 */
 	public void idzWprawo(){
 		this.pozycjaX++;
 		this.aktualizujPozycjeStworka();
 	}
 	
+	/*
+	 * Metoda obsluguje chodzenie stworka
+	 * w lewo
+	 */
 	public void idzWlewo(){
 		this.pozycjaX--;
 		this.aktualizujPozycjeStworka();
 	}
 	
+	/*
+	 * Metoda obsluguje chodzenie stworka
+	 * w gore
+	 */
 	public void idzWGore(){
 		this.pozycjaY--;
 		this.aktualizujPozycjeStworka();
 	}
 	
+	/*
+	 * Metoda obsluguje chodzenie stworka
+	 * w dol
+	 */
 	public void idzWdol(){
 		this.pozycjaY++;
 		this.aktualizujPozycjeStworka();

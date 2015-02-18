@@ -10,6 +10,12 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JPanel;
 
+/**
+ * Klasa tworzaca ekran pomieszczen
+ * 
+ * @author Lukasz Flak
+ *
+ */
 public class oknoEkranuPomieszczen extends JPanel implements zmienneGlobalne, ActionListener, obiektyGraficzne, obiektyEkranow{
 	
 	private int szerokoscOkna = szerokoscAplikacji;
@@ -27,7 +33,7 @@ public class oknoEkranuPomieszczen extends JPanel implements zmienneGlobalne, Ac
 	/*
 	 * Metoda dodaje komponenty do Ekranu Pomieszczen
 	 */
-	public void dodajKomponentyEkranuGlownego(){
+	public void dodajKomponentyEkranuPomieszczen(){
 		this.dodajEkranStworka();
 		
 		this.dodajPrzyciskiEkranuPomieszczen();
@@ -64,7 +70,7 @@ public class oknoEkranuPomieszczen extends JPanel implements zmienneGlobalne, Ac
 	 * Metoda tworzy Ekran Pomieszczen
 	 */
 	public void stworzEkranPomieszczen(){
-		this.dodajKomponentyEkranuGlownego();
+		this.dodajKomponentyEkranuPomieszczen();
 		
 		this.kolorTla = new Color(36,144,213);
 		

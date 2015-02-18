@@ -8,7 +8,16 @@ import java.awt.Graphics;
 
 import javax.swing.JButton;
 
-
+/**
+ * Klasa tworzaca przycisk tekstowy, ktory mozna pozniej
+ * spokojnie dodac do JLabel
+ * 
+ * TO DO:
+ * -trzeba dodac przycisk graficzny(grafika musi byc ladowana z klasy kwadratexObrazek!)
+ * 
+ * @author Lukasz Flak
+ *
+ */
 public class kwadratexPrzycisk extends JButton implements obiektyCzcionek{
 	private int szerokosc_przycsiku;
 	private int wysokosc_przycsiku;
@@ -16,6 +25,9 @@ public class kwadratexPrzycisk extends JButton implements obiektyCzcionek{
 	private int pozycjaY;
 	private String tekst_przycisku;
 	
+	/*
+	 * Konstruktor tworzacy przycisk na podanej x,y o okreslonych szerokosciach i odpowiednim stringu
+	 */
 	public kwadratexPrzycisk(int x, int y, int szerokosc, int wysokosc, String tekstButtona){
 		this.szerokosc_przycsiku = szerokosc;
 		this.wysokosc_przycsiku = wysokosc;
@@ -39,13 +51,18 @@ public class kwadratexPrzycisk extends JButton implements obiektyCzcionek{
 		
 		this.uruchom_najechanie_na_przycisk_akcja();
 	}
+	
 	/*
-	 * Metoda ustawia pozycje Komponentu na JButton
+	 * Metoda ustawia pozycje Komponentu na JLabel
 	 */
 	public void ustawPozycjeKomponentu(){
 		this.setBounds(this.pozycjaX, this.pozycjaY, this.szerokosc_przycsiku, this.wysokosc_przycsiku);
 	}
 	
+	/*
+	 * Metoda uruchamia akcje po najechaniu myszka na przycisk, w tym przypadku
+	 * bedzie to zmiana koloru
+	 */
 	public void uruchom_najechanie_na_przycisk_akcja(){
 
 		this.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -58,6 +75,11 @@ public class kwadratexPrzycisk extends JButton implements obiektyCzcionek{
 		});
 		
 	}
+	
+	/*
+	 * (non-Javadoc)
+	 * @see javax.swing.JComponent#paintComponent(java.awt.Graphics)
+	 */
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 	}

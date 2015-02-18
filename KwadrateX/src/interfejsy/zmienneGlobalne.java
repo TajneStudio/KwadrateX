@@ -7,12 +7,12 @@ import stworek.stworek;
 import timery.glowneZadanieTimera;
 
 /**
- * Interfjes zawierający zmienne Globalne gry
+ * Interfjes zawierajacy zmienne Globalne gry
  * 
  * UWAGA! Tutaj wrzucamy zmienne statyczne, ktore nigdy nie zmienia swojej
- * wartosci, a przydadza się w weikszej ilosci klas
+ * wartosci, a przydadza sie w weikszej ilosci klas
  * 
- * @author Lukasz
+ * @author Lukasz Flak
  *
  */
 public interface zmienneGlobalne {

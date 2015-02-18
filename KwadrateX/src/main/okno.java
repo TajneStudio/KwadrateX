@@ -5,9 +5,9 @@ import interfejsy.zmienneGlobalne;
 
 import javax.swing.JFrame;
 /**
- * Klasa tworząca Główne oknno gry
+ * Klasa tworzaca glowne oknno gry
  * 
- * @author Lukasz
+ * @author Lukasz Flak
  *
  */
 public class okno extends JFrame implements zmienneGlobalne, obiektyEkranow{
@@ -16,7 +16,7 @@ public class okno extends JFrame implements zmienneGlobalne, obiektyEkranow{
 	private int wysokosc = wysokoscAplikacji;
 	
 	/*
-	 * Metoda ustawiająca opcje okna
+	 * Metoda ustawiajaca opcje okna
 	 */
 	public okno(){
 		this.setLayout(null);
@@ -26,9 +26,8 @@ public class okno extends JFrame implements zmienneGlobalne, obiektyEkranow{
 		this.setResizable(false);
 		this.setTitle(this.tytulGry);
 		
-		this.addKeyListener(klawiaturaListener);
-		this.setFocusable(true);
-		
+
+		this.dodajObslugeKlawiatury();
 		this.dodajTimerGry();
 	}
 	
@@ -43,8 +42,19 @@ public class okno extends JFrame implements zmienneGlobalne, obiektyEkranow{
 		ekranPomieszczen.stworzEkranPomieszczen();
 	}
 	
+	/*
+	 * Metoda dodaje glowny Timer do gry
+	 */
 	public void dodajTimerGry(){
 		zegarGry.schedule(glowneZadania, 0, 8);
+	}
+	
+	/*
+	 * Metoda dodaje obsluge klawiatury
+	 */
+	public void dodajObslugeKlawiatury(){
+		this.addKeyListener(klawiaturaListener);
+		this.setFocusable(true);
 	}
 	
 	/*

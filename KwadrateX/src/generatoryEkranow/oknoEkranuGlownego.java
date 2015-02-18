@@ -14,7 +14,7 @@ import klasyPomocnicze.kwadratexPrzycisk;
 /**
  * Klasa tworzaca ekran menu Glownego
  * 
- * @author Lukasz
+ * @author Lukasz Flak
  *
  */
 public class oknoEkranuGlownego extends JPanel implements zmienneGlobalne, ActionListener, obiektyGraficzne, obiektyEkranow{

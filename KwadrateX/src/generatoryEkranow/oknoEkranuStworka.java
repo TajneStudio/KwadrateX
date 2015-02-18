@@ -12,6 +12,13 @@ import java.awt.event.MouseListener;
 
 import javax.swing.JPanel;
 
+/**
+ * Klasa tworzy ekran Storka
+ * (ten po ktorym porusza sie stworek)
+ * 
+ * @author Lukasz Flak
+ *
+ */
 public class oknoEkranuStworka extends JPanel implements zmienneGlobalne, obiektyGraficzne{
 	
 	private int szerokoscOkna = szerokoscAplikacji;

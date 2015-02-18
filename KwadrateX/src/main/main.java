@@ -3,15 +3,15 @@ package main;
 import interfejsy.obiektyEkranow;
 
 /**
- * Główna klasa naszej gry KwadrateX
+ * Glowna klasa gry KwadrateX
  * 
- * @author Lukasz
+ * @author Lukasz Flak
  *
  */
 public class main implements obiektyEkranow{
 	
 	/*
-	 * Główna pętla gry
+	 * Glowna metoda gry
 	 */
 	public static void main(String args[]){
 		oknoGry.wyswietlOknoGry();

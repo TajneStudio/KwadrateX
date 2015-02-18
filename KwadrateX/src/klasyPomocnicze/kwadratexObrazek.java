@@ -10,7 +10,13 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-
+/**
+ * Klasa tworzaca component zawierjacy grafike, ktora
+ * mozna potem umiescic na dowolnym JPanel
+ * 
+ * @author Lukasz Flak
+ *
+ */
 public class kwadratexObrazek extends Component implements zmienneGlobalne{
 	
 	private int pozycjaX;

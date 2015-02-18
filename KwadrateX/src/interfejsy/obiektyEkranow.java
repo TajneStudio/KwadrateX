@@ -11,7 +11,7 @@ import main.okno;
  * UWAGA! Tutaj tworzymy obiekty klas, potem odowlujemy sie do tego interfejsu 
  * aby skorzystac z jakiegos potrzebnego nam obiektu
  * 
- * @author Lukasz
+ * @author Lukasz Flak
  *
  */
 public interface obiektyEkranow {

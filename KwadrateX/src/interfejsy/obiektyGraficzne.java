@@ -2,6 +2,16 @@ package interfejsy;
 
 import klasyPomocnicze.kwadratexObrazek;
 
+/**
+ * Interfejs zawierajacy grafiki Gry
+ * 
+ * UWAGA! Tutaj konstruujemy obiekty graficzne, beda tworzyc
+ * sie one dzieki temu tylko raz i pozwoli to zwiekszyc predkosc
+ * ladowania
+ * 
+ * @author Lukasz Flak
+ *
+ */
 public interface obiektyGraficzne {
 	/*
 	 * Obiekty graficzne dla EkranuGlownego
