@@ -6,12 +6,10 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RadialGradientPaint;
-import java.awt.RenderingHints;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Point2D;
 import java.awt.image.BufferedImage;
 
-import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
 
 /**
@@ -36,7 +34,7 @@ public class stworek extends JPanel implements obiektyGraficzne{
 	private double skalaXstworka = 2;
 	private double skalaYstworka = 2;
 	
-	private int szybkoscStworka = 3;
+	private int szybkoscStworka = 2;
 	
 	private BufferedImage plikGraficznyStworka;
 	private AffineTransform macierzTransformacjiStworka = new AffineTransform();
@@ -108,9 +106,29 @@ public class stworek extends JPanel implements obiektyGraficzne{
 	    	this.rysujCialoStworka(bf_draw);
 	    	this.rysujOkoStworka(bf_draw,5,9);
 	    	this.rysujOkoStworka(bf_draw,28,9);
+	    	this.rysujNosStworka(bf_draw, 23, 31);
+	    	this.rysujUstaStworka(bf_draw, 12, 32);
 	
 	    	this.pierwszeRysowanieStworka = false;
     	}
+    }
+    
+    /*
+     * Metoda rysuje usta stworka
+     */
+    public void rysujUstaStworka(Graphics2D bf_draw_pobrany,int x_ust,int y_ust){
+    	bf_draw_pobrany.setColor(new Color(60,60,60));
+    	
+    	bf_draw_pobrany.drawArc(x_ust, y_ust, 25, 9, 0, -180);
+    }
+    
+    /*
+     * Metoda rysuje nos stworka
+     */
+    public void rysujNosStworka(Graphics2D bf_draw_pobrany,int x_nosa,int y_nosa){
+    	bf_draw_pobrany.setColor(new Color(60,60,60));
+    	bf_draw_pobrany.fillRect(x_nosa, y_nosa, 4, 2);
+    	bf_draw_pobrany.fillRect(x_nosa+1, y_nosa-1, 2, 1);
     }
     
     /*

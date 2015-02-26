@@ -1,18 +1,11 @@
 package generatoryEkranow;
 
-import interfejsy.obiektyEkranow;
 import interfejsy.obiektyGraficzne;
 import interfejsy.zmienneGlobalne;
 
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.RenderingHints;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.awt.geom.AffineTransform;
 
 import javax.swing.JPanel;
 

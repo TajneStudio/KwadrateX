@@ -1,6 +1,5 @@
 package timery;
 
-import generatoryEkranow.oknoEkranuStworka;
 import interfejsy.obiektyEkranow;
 import interfejsy.zmienneGlobalne;
 
