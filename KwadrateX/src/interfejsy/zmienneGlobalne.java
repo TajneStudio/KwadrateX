@@ -23,7 +23,7 @@ public interface zmienneGlobalne {
 	int wysokoscEkranuStworka = 501;
 	
 	//stworek
-	stworek stworekUsera = new stworek(70,70);
+	stworek stworekUsera = new stworek(0.0d,0.0d);
 	
 	//obsluga zdarzen klawiatury
 	klawiaturaOpcje klawiaturaListener = new klawiaturaOpcje();

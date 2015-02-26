@@ -1,5 +1,7 @@
 package timery;
 
+import generatoryEkranow.oknoEkranuStworka;
+import interfejsy.obiektyEkranow;
 import interfejsy.zmienneGlobalne;
 
 import java.util.TimerTask;
@@ -11,9 +13,19 @@ import java.util.TimerTask;
  * @author Lukasz Flak
  *
  */
-public class glowneZadanieTimera extends TimerTask implements zmienneGlobalne{
+public class glowneZadanieTimera extends TimerTask implements zmienneGlobalne, obiektyEkranow{
 	
 	public void run(){
+
+		this.uruchomFunkcjeKlawiatury();
+		ekranStworka.repaint();
+		
+	}
+	
+	/*
+	 * Metoda sluzy do obslugi akcji wywolanych przez klawiature
+	 */
+	public void uruchomFunkcjeKlawiatury(){
 		//klawisz w prawo jest wcisniety
 		if(klawiaturaListener.getKlawiszPrawo() == true){
 			stworekUsera.idzWprawo();
@@ -34,4 +46,5 @@ public class glowneZadanieTimera extends TimerTask implements zmienneGlobalne{
 			stworekUsera.idzWlewo();
 		}
 	}
+	
 }

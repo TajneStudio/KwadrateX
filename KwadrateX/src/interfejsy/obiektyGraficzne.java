@@ -34,4 +34,8 @@ public interface obiektyGraficzne {
 	 */
 	kwadratexObrazek ekranStworkaRamaGora = new kwadratexObrazek(0,0,"src/obrazki/ekranStworka/ekranStworkaRamaGora.png");
 	kwadratexObrazek ekranStworkaRamaDol = new kwadratexObrazek(0,495,"src/obrazki/ekranStworka/ekranStworkaRamaDol.png");
+	/*
+	 * Obrazki dla STORKA
+	 */
+	kwadratexObrazek stworekRamka = new kwadratexObrazek("src/obrazki/stworek/ramkaStworka.png");
 }

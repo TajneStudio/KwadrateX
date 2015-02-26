@@ -1,10 +1,12 @@
 package klasyPomocnicze;
+import interfejsy.obiektyGraficzne;
 import interfejsy.zmienneGlobalne;
 
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
@@ -31,7 +33,7 @@ public class kwadratexObrazek extends Component implements zmienneGlobalne{
 	
 	private File fileImage;
 	private String imageSrc;
-	private Image obrazek;
+	private BufferedImage obrazek;
 	
 	/*
 	 * Konstruktor tworzacy obrazek na danym x i y
@@ -50,6 +52,14 @@ public class kwadratexObrazek extends Component implements zmienneGlobalne{
 		this.maksymalnyY = wysokoscAplikacji-this.wysokosc;
 		this.obslugaBlednejPozycji();
 		this.ustawPozycjeKomponentu();
+	}
+	
+	/*
+	 * Konstruktor ladujacy tylko i wylacznie plik graficzny
+	 */
+	public kwadratexObrazek(String zrodloDopliku){
+		this.imageSrc = zrodloDopliku;
+		this.pobierzObrazek();
 	}
 	
 	/*
@@ -117,6 +127,13 @@ public class kwadratexObrazek extends Component implements zmienneGlobalne{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	/*
+	 * Metoda zwraca obiekt obrazka pobranego do tej klasy
+	 */
+	public BufferedImage getObrazek(){
+		return this.obrazek;
 	}
 	
 	/*

@@ -1,6 +1,15 @@
 package stworek;
 
+import interfejsy.obiektyGraficzne;
+
 import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RadialGradientPaint;
+import java.awt.RenderingHints;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.Point2D;
+import java.awt.image.BufferedImage;
 
 import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
@@ -14,37 +23,34 @@ import javax.swing.JPanel;
  * @author Lukasz Flak
  *
  */
-public class stworek extends JPanel{
-	private int pozycjaX;
-	private int pozycjaY;
+public class stworek extends JPanel implements obiektyGraficzne{
+	private double pozycjaX;
+	private double pozycjaY;
 	
 	private Color kolorStworka;
 	
-	private int szerokoscStworkaMalego = 50;
-	private int wysokoscKolizyjnaStworkaMalego = 10;
-	private int wysokoscStworkaMalego = 50;
+	private int szerokoscStworkaPoczatkowa = 50;
+	private int wysokoscKolizyjnaStworkaPoczatkowa = 10;
+	private int wysokoscStworkaPoczatkowa = 50;
 	
-	private int szerokoscStworkaDuzego;
-	private int wysokoscKolizyjnaStworkaDuzego;
-	private int wysokoscStworkaDuzego;
+	private double skalaXstworka = 2;
+	private double skalaYstworka = 2;
+	
+	private int szybkoscStworka = 3;
+	
+	private BufferedImage plikGraficznyStworka;
+	private AffineTransform macierzTransformacjiStworka = new AffineTransform();
+	
+	private boolean pierwszeRysowanieStworka = true;
 	
 	/*
 	 * Konstruktor tworzacy stworka, x i y to jego pozycje na planszy
 	 */
-	public stworek(int x, int y){
+	public stworek(double x, double y){
 		this.pozycjaX = x;
 		this.pozycjaY = y;
 		
-		this.aktualizujPozycjeStworka();
 		this.ustawPodstawoweParametryStworka();
-	}
-	
-	/*
-	 * Metoda stawia stworka w odpowiednim miejscu na mapie
-	 * wywolana po raz kolejny po zmianie x i y zmienia pozycje stworka
-	 */
-	public void aktualizujPozycjeStworka(){
-		this.setBounds(this.pozycjaX, this.pozycjaY, this.szerokoscStworkaMalego, this.wysokoscStworkaMalego);
 	}
 	
 	/*
@@ -52,8 +58,7 @@ public class stworek extends JPanel{
 	 * w prawo
 	 */
 	public void idzWprawo(){
-		this.pozycjaX++;
-		this.aktualizujPozycjeStworka();
+		this.pozycjaX += this.szybkoscStworka;
 	}
 	
 	/*
@@ -61,8 +66,7 @@ public class stworek extends JPanel{
 	 * w lewo
 	 */
 	public void idzWlewo(){
-		this.pozycjaX--;
-		this.aktualizujPozycjeStworka();
+		this.pozycjaX -= this.szybkoscStworka;
 	}
 	
 	/*
@@ -70,8 +74,7 @@ public class stworek extends JPanel{
 	 * w gore
 	 */
 	public void idzWGore(){
-		this.pozycjaY--;
-		this.aktualizujPozycjeStworka();
+		this.pozycjaY -= this.szybkoscStworka;
 	}
 	
 	/*
@@ -79,18 +82,98 @@ public class stworek extends JPanel{
 	 * w dol
 	 */
 	public void idzWdol(){
-		this.pozycjaY++;
-		this.aktualizujPozycjeStworka();
+		this.pozycjaY += this.szybkoscStworka;
 	}
 	
 	/*
 	 * Metoda ustawia podstawowe parametry stweorka
 	 */
 	public void ustawPodstawoweParametryStworka(){
-		
-		this.kolorStworka = new Color(0,255,0);
-		this.setBackground(this.kolorStworka);
-		
+		this.setBounds(0, 0, this.szerokoscStworkaPoczatkowa, this.wysokoscStworkaPoczatkowa);
 		this.setVisible(true);
 	}
+	
+	/*
+	 * Metoda generuje stworka
+	 * 
+	 * (non-Javadoc)
+	 * @see javax.swing.JComponent#paint(java.awt.Graphics)
+	 */
+    public void paint(Graphics g) {
+    	if(this.pierwszeRysowanieStworka){
+    		this.plikGraficznyStworka = new BufferedImage( this.getWidth(),this.getHeight(), BufferedImage.TYPE_INT_RGB);
+	    	Graphics2D bf_draw = this.plikGraficznyStworka.createGraphics();
+	    	
+	    	//generacja stworka
+	    	this.rysujCialoStworka(bf_draw);
+	    	this.rysujOkoStworka(bf_draw,5,9);
+	    	this.rysujOkoStworka(bf_draw,28,9);
+	
+	    	this.pierwszeRysowanieStworka = false;
+    	}
+    }
+    
+    /*
+     * Mrtoda rysuje pojedyncze oko stworka
+     */
+    public void rysujOkoStworka(Graphics2D bf_draw_pobrany,int x_oka,int y_oka){
+    	//oko wypelnienie
+    	bf_draw_pobrany.setColor(new Color(223,249,245));
+    	bf_draw_pobrany.fillOval(x_oka, y_oka, 16, 20);
+    	
+    	//oko teczowka
+        Point2D center = new Point2D.Float(x_oka+1+7, y_oka+3+7);
+        float radius = 14;
+        float[] dist = {0.1f, 0.45f};
+        Color[] colors = {new Color(0,0,0), new Color(223,249,245)};
+        RadialGradientPaint p = new RadialGradientPaint(center, radius, dist, colors);
+        bf_draw_pobrany.setPaint(p);
+
+        bf_draw_pobrany.fillOval(x_oka, y_oka, 16, 20);
+        
+    	//oko ramka
+    	bf_draw_pobrany.setColor(new Color(133,133,133));
+    	bf_draw_pobrany.drawOval(x_oka, y_oka, 16, 20);
+    }
+    
+    /*
+     * Metoda rysuje cialo stworka
+     */
+    public void rysujCialoStworka(Graphics2D bf_draw_pobrany){
+    	//cialo ramka
+    	bf_draw_pobrany.setColor(new Color(125,125,125));
+    	bf_draw_pobrany.drawRect(0, 0, 49, 49);
+    	
+    	//cialo wypelenieni
+    	bf_draw_pobrany.setColor(new Color(212,212,212));
+    	bf_draw_pobrany.fillRect(1, 1, 48, 48);
+    }
+    
+    /*
+     * Metoda ustawia parametry macierzy transformacji stworka takie jak skalowanie czy
+     * przesuniecie
+     */
+    public void ustawParametryMacierzyTransformacjiStworka(Graphics2D g2d_ekranuStworka_pobrany){
+    	//resetowanie macierzy transformacji
+    	this.macierzTransformacjiStworka.setToIdentity();
+    	
+    	this.macierzTransformacjiStworka.translate(this.pozycjaX, this.pozycjaY);
+    	this.macierzTransformacjiStworka.scale(this.skalaXstworka,this.skalaYstworka);
+    	
+    	//zaakceptowanie transformacji stworka
+    	g2d_ekranuStworka_pobrany.setTransform(this.macierzTransformacjiStworka);
+    }
+    
+    /*
+     * Metoda powinna byc wywolana na ekranie rysujacym, pozwala ona na odrysowanie stworka
+     * z wszystkimi transformacjami
+     */
+    public void rysujStworka(Graphics2D g2d_ekranuStworka){
+    	
+    	this.ustawParametryMacierzyTransformacjiStworka(g2d_ekranuStworka);
+    	
+    	//odrysuj stworka na ekranie
+    	g2d_ekranuStworka.drawImage(this.plikGraficznyStworka,0,0,null);
+    	
+    }
 }

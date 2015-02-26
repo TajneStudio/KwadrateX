@@ -5,10 +5,14 @@ import interfejsy.obiektyGraficzne;
 import interfejsy.zmienneGlobalne;
 
 import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.geom.AffineTransform;
 
 import javax.swing.JPanel;
 
@@ -28,6 +32,8 @@ public class oknoEkranuStworka extends JPanel implements zmienneGlobalne, obiekt
 	int pozycjaX;
 	int pozycjaY;
 	
+	private boolean pierwszeRysowaniePlanszy = true;
+	
 	/*
 	 * Konstruktor ustawia layout i rozmiar danego ekranu (nie zmieniamy tego!)
 	 */
@@ -42,40 +48,40 @@ public class oknoEkranuStworka extends JPanel implements zmienneGlobalne, obiekt
 	}
 	
 	/*
-	 * Metoda dodaje komponenty do Ekranu Stworka
+	 * Metoda tworzy Ekran Stworka
 	 */
-	public void dodajKomponentyEkranuStworka(){
-		this.dodajStworka();
+	public void stworzEkranStworka(){
+		this.setVisible(true);
+	}
+	
+	/*
+	 * Metoda rysuje cala plansze i obiekty ktore ona zawiera
+	 * 
+	 * (non-Javadoc)
+	 * @see javax.swing.JComponent#paint(java.awt.Graphics)
+	 */
+	public void paint(Graphics g) {
 		
-		this.dodajObiektyGraficzne();
+		Graphics2D g2d = ( Graphics2D ) g;
+		
+		
+		if(this.pierwszeRysowaniePlanszy){
+			stworekUsera.paint(g2d);
+			this.pierwszeRysowaniePlanszy = false;
+		}
+		
+		g2d.setColor(new Color(255,255,255));
+		g2d.fillRect(0, 0, 300, 400);
+		
+		this.dodajStworka(g2d);
+		
 	}
 	
 	/*
 	 * Metoda dodaje stworka na plansze
 	 */
-	public void dodajStworka(){
-		this.add(stworekUsera);
+	public void dodajStworka(Graphics2D g2d_pobrany){
+		stworekUsera.rysujStworka(g2d_pobrany);
 	}
-	
-	/*
-	 * Metoda dodaje obiekty graficzne do Ekranu Stworka
-	 */
-	public void dodajObiektyGraficzne(){
-		this.add(ekranStworkaRamaGora);
-		this.add(ekranStworkaRamaDol);
-	}
-	
-	/*
-	 * Metoda tworzy Ekran Stworka
-	 */
-	public void stworzEkranStworka(){
-		this.dodajKomponentyEkranuStworka();
-		
-		this.kolorTla = new Color(255,255,255);
-		this.setBackground(this.kolorTla);
-
-		this.setVisible(true);
-	}
-
 	
 }
