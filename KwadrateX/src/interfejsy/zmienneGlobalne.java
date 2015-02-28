@@ -22,8 +22,11 @@ public interface zmienneGlobalne {
 	
 	int wysokoscEkranuStworka = 501;
 	
+	//120fps zatrzymanie
+	long klatkiNaSekunde = 1000/120;
+	
 	//stworek
-	stworek stworekUsera = new stworek(0.0d,0.0d);
+	stworek stworekUsera = new stworek(100.0d,150.0d);
 	
 	//obsluga zdarzen klawiatury
 	klawiaturaOpcje klawiaturaListener = new klawiaturaOpcje();

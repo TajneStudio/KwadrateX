@@ -34,7 +34,18 @@ public class stworek extends JPanel implements obiektyGraficzne{
 	private double skalaXstworka = 2;
 	private double skalaYstworka = 2;
 	
+	private float pozycjaXoczuStworkaMin = 5;
+	private float pozycjaXoczuStworka = 7;
+	private float pozycjaXoczuStworkaPodstawowa = 7;
+	private float pozycjaXoczuStworkaMax = 9;
+	
+	private float pozycjaYoczuStworkaMin = 5;
+	private float pozycjaYoczuStworka = 7;
+	private float pozycjaYoczuStworkaPodstawowa = 7;
+	private float pozycjaYoczuStworkaMax = 9;
+	
 	private int szybkoscStworka = 2;
+	private float szybkoscOczuStworka = 0.1f;
 	
 	private BufferedImage plikGraficznyStworka;
 	private AffineTransform macierzTransformacjiStworka = new AffineTransform();
@@ -57,6 +68,7 @@ public class stworek extends JPanel implements obiektyGraficzne{
 	 */
 	public void idzWprawo(){
 		this.pozycjaX += this.szybkoscStworka;
+		this.animujOczyStworka(this.szybkoscOczuStworka,"prawo");
 	}
 	
 	/*
@@ -65,6 +77,7 @@ public class stworek extends JPanel implements obiektyGraficzne{
 	 */
 	public void idzWlewo(){
 		this.pozycjaX -= this.szybkoscStworka;
+		this.animujOczyStworka(this.szybkoscOczuStworka,"lewo");
 	}
 	
 	/*
@@ -73,6 +86,7 @@ public class stworek extends JPanel implements obiektyGraficzne{
 	 */
 	public void idzWGore(){
 		this.pozycjaY -= this.szybkoscStworka;
+		this.animujOczyStworka(this.szybkoscOczuStworka,"gora");
 	}
 	
 	/*
@@ -81,6 +95,7 @@ public class stworek extends JPanel implements obiektyGraficzne{
 	 */
 	public void idzWdol(){
 		this.pozycjaY += this.szybkoscStworka;
+		this.animujOczyStworka(this.szybkoscOczuStworka,"dol");
 	}
 	
 	/*
@@ -104,13 +119,48 @@ public class stworek extends JPanel implements obiektyGraficzne{
 	    	
 	    	//generacja stworka
 	    	this.rysujCialoStworka(bf_draw);
-	    	this.rysujOkoStworka(bf_draw,5,9);
-	    	this.rysujOkoStworka(bf_draw,28,9);
+	    	this.rysujOczyStworka(bf_draw,5,28);
 	    	this.rysujNosStworka(bf_draw, 23, 31);
 	    	this.rysujUstaStworka(bf_draw, 12, 32);
 	
 	    	this.pierwszeRysowanieStworka = false;
     	}
+    }
+    
+    /*
+     * Metoda rysuje usta stworka
+     * ATRYBUTY:
+     * -FLOAT predkoscOczu -> odpowiedzialne za predkosc oczu
+     * -STRING kierunek -> gora, prawo, dol, lewo
+     */
+    public void animujOczyStworka(float predkoscOczu,String kierunek){
+    	Graphics2D bf_draw = this.plikGraficznyStworka.createGraphics();
+    	
+    	if(this.pozycjaYoczuStworka >= this.pozycjaYoczuStworkaMin){
+	    	if(kierunek == "gora"){
+	    		this.pozycjaYoczuStworka -= predkoscOczu;
+	    	}
+    	}
+	    
+	    if(this.pozycjaYoczuStworkaMax >= this.pozycjaYoczuStworka){
+	    	if(kierunek == "dol"){
+	    		this.pozycjaYoczuStworka += predkoscOczu;
+	    	}
+    	}
+    	
+    	if(this.pozycjaXoczuStworkaMax >= this.pozycjaXoczuStworka){
+	    	if(kierunek == "prawo"){
+	    		this.pozycjaXoczuStworka += predkoscOczu;
+	    	}
+    	}
+    	
+    	if(this.pozycjaXoczuStworka >= this.pozycjaXoczuStworkaMin){
+	    	if(kierunek == "lewo"){
+	    		this.pozycjaXoczuStworka -= predkoscOczu;
+	    	}
+    	}
+    	
+    	this.rysujOczyStworka(bf_draw,5,28);
     }
     
     /*
@@ -131,6 +181,11 @@ public class stworek extends JPanel implements obiektyGraficzne{
     	bf_draw_pobrany.fillRect(x_nosa+1, y_nosa-1, 2, 1);
     }
     
+    public void rysujOczyStworka(Graphics2D bf_draw_pobrany,int xPierwszegoOka,int xDrugiegoOka){
+    	this.rysujOkoStworka(bf_draw_pobrany,xPierwszegoOka,9);
+    	this.rysujOkoStworka(bf_draw_pobrany,xDrugiegoOka,9);
+    }
+    
     /*
      * Mrtoda rysuje pojedyncze oko stworka
      */
@@ -140,7 +195,7 @@ public class stworek extends JPanel implements obiektyGraficzne{
     	bf_draw_pobrany.fillOval(x_oka, y_oka, 16, 20);
     	
     	//oko teczowka
-        Point2D center = new Point2D.Float(x_oka+1+7, y_oka+3+7);
+        Point2D center = new Point2D.Float(x_oka+1+this.pozycjaXoczuStworka, y_oka+3+this.pozycjaYoczuStworka);
         float radius = 14;
         float[] dist = {0.1f, 0.45f};
         Color[] colors = {new Color(0,0,0), new Color(223,249,245)};

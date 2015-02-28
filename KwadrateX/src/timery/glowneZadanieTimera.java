@@ -15,10 +15,18 @@ import java.util.TimerTask;
 public class glowneZadanieTimera extends TimerTask implements zmienneGlobalne, obiektyEkranow{
 	
 	public void run(){
-
-		this.uruchomFunkcjeKlawiatury();
-		ekranStworka.repaint();
-		
+		while(true){
+			this.uruchomFunkcjeKlawiatury();
+			ekranStworka.repaint();
+			
+			//zatrzymywanie zegara
+			try {
+				Thread.sleep(klatkiNaSekunde);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}	
 	}
 	
 	/*

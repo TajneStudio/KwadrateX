@@ -77,4 +77,14 @@ public class oknoEkranuStworka extends JPanel implements zmienneGlobalne, obiekt
 		stworekUsera.rysujStworka(g2d_pobrany);
 	}
 	
+	/*
+	 * Nadpisanie metody update pozwoli na przyspieszenie dzia³ania aplikacji
+	 * 
+	 * (non-Javadoc)
+	 * @see javax.swing.JComponent#update(java.awt.Graphics)
+	 */
+	public void update(Graphics g){
+		
+	}
+	
 }

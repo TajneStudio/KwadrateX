@@ -46,7 +46,7 @@ public class okno extends JFrame implements zmienneGlobalne, obiektyEkranow{
 	 * Metoda dodaje glowny Timer do gry
 	 */
 	public void dodajTimerGry(){
-		zegarGry.schedule(glowneZadania, 0, 8);
+		zegarGry.schedule(glowneZadania, 0);
 	}
 	
 	/*
