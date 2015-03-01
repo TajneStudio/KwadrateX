@@ -22,11 +22,22 @@ import javax.swing.JPanel;
  *
  */
 public class stworek extends JPanel implements obiektyGraficzne{
+	//pozycje stworka
 	private double pozycjaX;
 	private double pozycjaY;
 	
-	private Color kolorStworka;
+	//kolory stworka
+	private Color kolorRamkiStworka = new Color(125,125,125);
+	private Color kolorCialaStworka = new Color(212,212,212);
 	
+	private Color kolorGalkiOcznejStworka = new Color(223,249,245);
+	private Color kolorTeczowkiStworka = new Color(0,0,0);
+	
+	private Color kolorNosaStworka = new Color(60,60,60);
+	
+	private Color kolorUstStworka = new Color(60,60,60);
+	
+	//rozmairy stworka
 	private int szerokoscStworkaPoczatkowa = 50;
 	private int wysokoscKolizyjnaStworkaPoczatkowa = 10;
 	private int wysokoscStworkaPoczatkowa = 50;
@@ -34,6 +45,11 @@ public class stworek extends JPanel implements obiektyGraficzne{
 	private double skalaXstworka = 2;
 	private double skalaYstworka = 2;
 	
+	//predkosci stworka
+	private int szybkoscStworka = 2;
+	private float szybkoscOczuStworka = 0.1f;
+	
+	//pozycje oczu stworka
 	private float pozycjaXoczuStworkaMin = 5;
 	private float pozycjaXoczuStworka = 7;
 	private float pozycjaXoczuStworkaPodstawowa = 7;
@@ -44,12 +60,11 @@ public class stworek extends JPanel implements obiektyGraficzne{
 	private float pozycjaYoczuStworkaPodstawowa = 7;
 	private float pozycjaYoczuStworkaMax = 9;
 	
-	private int szybkoscStworka = 2;
-	private float szybkoscOczuStworka = 0.1f;
-	
+	//grafika stworka
 	private BufferedImage plikGraficznyStworka;
 	private AffineTransform macierzTransformacjiStworka = new AffineTransform();
 	
+	//zmienna inicjujaca pierwsze rysownaie stworka
 	private boolean pierwszeRysowanieStworka = true;
 	
 	/*
@@ -167,7 +182,7 @@ public class stworek extends JPanel implements obiektyGraficzne{
      * Metoda rysuje usta stworka
      */
     public void rysujUstaStworka(Graphics2D bf_draw_pobrany,int x_ust,int y_ust){
-    	bf_draw_pobrany.setColor(new Color(60,60,60));
+    	bf_draw_pobrany.setColor(this.kolorUstStworka);
     	
     	bf_draw_pobrany.drawArc(x_ust, y_ust, 25, 9, 0, -180);
     }
@@ -176,7 +191,7 @@ public class stworek extends JPanel implements obiektyGraficzne{
      * Metoda rysuje nos stworka
      */
     public void rysujNosStworka(Graphics2D bf_draw_pobrany,int x_nosa,int y_nosa){
-    	bf_draw_pobrany.setColor(new Color(60,60,60));
+    	bf_draw_pobrany.setColor(this.kolorNosaStworka);
     	bf_draw_pobrany.fillRect(x_nosa, y_nosa, 4, 2);
     	bf_draw_pobrany.fillRect(x_nosa+1, y_nosa-1, 2, 1);
     }
@@ -191,21 +206,21 @@ public class stworek extends JPanel implements obiektyGraficzne{
      */
     public void rysujOkoStworka(Graphics2D bf_draw_pobrany,int x_oka,int y_oka){
     	//oko wypelnienie
-    	bf_draw_pobrany.setColor(new Color(223,249,245));
+    	bf_draw_pobrany.setColor(this.kolorGalkiOcznejStworka);
     	bf_draw_pobrany.fillOval(x_oka, y_oka, 16, 20);
     	
     	//oko teczowka
         Point2D center = new Point2D.Float(x_oka+1+this.pozycjaXoczuStworka, y_oka+3+this.pozycjaYoczuStworka);
         float radius = 14;
         float[] dist = {0.1f, 0.45f};
-        Color[] colors = {new Color(0,0,0), new Color(223,249,245)};
+        Color[] colors = {this.kolorTeczowkiStworka, this.kolorGalkiOcznejStworka};
         RadialGradientPaint p = new RadialGradientPaint(center, radius, dist, colors);
         bf_draw_pobrany.setPaint(p);
 
-        bf_draw_pobrany.fillOval(x_oka, y_oka, 16, 20);
+        bf_draw_pobrany.fillOval(x_oka, y_oka, 17, 20);
         
     	//oko ramka
-    	bf_draw_pobrany.setColor(new Color(133,133,133));
+    	bf_draw_pobrany.setColor(this.kolorRamkiStworka);
     	bf_draw_pobrany.drawOval(x_oka, y_oka, 16, 20);
     }
     
@@ -214,11 +229,11 @@ public class stworek extends JPanel implements obiektyGraficzne{
      */
     public void rysujCialoStworka(Graphics2D bf_draw_pobrany){
     	//cialo ramka
-    	bf_draw_pobrany.setColor(new Color(125,125,125));
+    	bf_draw_pobrany.setColor(this.kolorRamkiStworka);
     	bf_draw_pobrany.drawRect(0, 0, 49, 49);
     	
     	//cialo wypelenieni
-    	bf_draw_pobrany.setColor(new Color(212,212,212));
+    	bf_draw_pobrany.setColor(this.kolorCialaStworka);
     	bf_draw_pobrany.fillRect(1, 1, 48, 48);
     }
     
