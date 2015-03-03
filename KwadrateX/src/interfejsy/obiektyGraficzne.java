@@ -37,5 +37,5 @@ public interface obiektyGraficzne {
 	/*
 	 * Obrazki dla STORKA
 	 */
-	kwadratexObrazek tloGry = new kwadratexObrazek("src/obrazki/ekranPomieszczen/tlo.png");
+	kwadratexObrazek tloGryObrazek = new kwadratexObrazek("src/obrazki/ekranPomieszczen/tlo.png");
 }

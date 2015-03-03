@@ -60,11 +60,8 @@ public class oknoEkranuStworka extends JPanel implements zmienneGlobalne, obiekt
 		
 		
 		if(this.pierwszeRysowaniePlanszy){
-			stworekUsera.paint(g2d);
-			
-			tloPomieszczenia.zaladujGrafike(tloGry);
-			tloPomieszczenia.paint(g2d);
-			
+
+			this.inicjujGrafike(g2d);
 			
 			this.pierwszeRysowaniePlanszy = false;
 		}
@@ -72,6 +69,33 @@ public class oknoEkranuStworka extends JPanel implements zmienneGlobalne, obiekt
 		this.dodajTlo(g2d);
 		this.dodajStworka(g2d);
 		
+	}
+	
+	/*
+	 * Metoda inicjuje grafikê gry. Laduje ja do pamieci, lub generuje po raz pierwszy
+	 */
+	public void inicjujGrafike(Graphics2D g2d_pobrany){
+
+		this.inicjujStworka(g2d_pobrany);
+		this.inicjujElementyPlanszy(g2d_pobrany);
+
+	}
+	
+	/*
+	 * Metoda inicjuje stworka lub STWORKI(to w przyszlosci)
+	 */
+	public void inicjujStworka(Graphics2D g2d_pobrany){
+		//rysuj steorka po raz pierwszy STWOREK
+		stworekUsera.paint(g2d_pobrany);
+	}
+	
+	/*
+	 * Metoda inicjuj elementy graficzne planszy
+	 */
+	public void inicjujElementyPlanszy(Graphics2D g2d_pobrany){
+		//tak obslugujemy klase kwadratexGrafika TLO GRY
+		tloGry.zaladujGrafike(tloGryObrazek);
+		tloGry.paint(g2d_pobrany);
 	}
 	
 	/*
@@ -85,7 +109,7 @@ public class oknoEkranuStworka extends JPanel implements zmienneGlobalne, obiekt
 	 * Metoda dodaje tlo na plansze
 	 */
 	public void dodajTlo(Graphics2D g2d_pobrany){
-		tloPomieszczenia.rysuj(g2d_pobrany);
+		tloGry.rysuj(g2d_pobrany);
 	}
 	
 	/*

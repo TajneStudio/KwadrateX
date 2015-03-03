@@ -10,12 +10,12 @@ import javax.swing.JPanel;
 /**
  * 
  * Klasa abstrakcyjna odpowiadajaca za szkielet dla obiektow ktore rysuja
- * na planszy stworka
+ * na planszy stworka kopiujemy ta klase wszedzie tam gdzie bedziemy uzywac grafiki
  * 
  * @author Lukasz Flak
  *
  */
-public abstract class szkieletGraficzny extends JPanel {
+public class kwadratexGrafika extends JPanel {
 	
 	private double pozycjaX;
 	private double pozycjaY;
@@ -29,7 +29,7 @@ public abstract class szkieletGraficzny extends JPanel {
 	/*
 	 * Konstruktor tworzacy grafike, x i y to pozycje na planszy
 	 */
-	public szkieletGraficzny(double x, double y){
+	public kwadratexGrafika(double x, double y){
 		this.pozycjaX = x;
 		this.pozycjaY = y;
 		
@@ -37,7 +37,7 @@ public abstract class szkieletGraficzny extends JPanel {
 	}
 	
 	/*
-	 * Metoda laduje grafike do klasy
+	 * Metoda laduje grafike do obiektu utworzonoego w ramach tej klasy
 	 */
 	public void zaladujGrafike(kwadratexObrazek obrazek_pobrany){
 		this.obrazekZewnetrzny = obrazek_pobrany.getObrazek();
