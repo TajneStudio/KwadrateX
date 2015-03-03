@@ -1,6 +1,7 @@
 package generatoryEkranow;
 
 import interfejsy.obiektyGraficzne;
+import interfejsy.obiektyPlanszy;
 import interfejsy.zmienneGlobalne;
 
 import java.awt.Color;
@@ -16,7 +17,7 @@ import javax.swing.JPanel;
  * @author Lukasz Flak
  *
  */
-public class oknoEkranuStworka extends JPanel implements zmienneGlobalne, obiektyGraficzne{
+public class oknoEkranuStworka extends JPanel implements zmienneGlobalne, obiektyGraficzne, obiektyPlanszy{
 	
 	private int szerokoscOkna = szerokoscAplikacji;
 	private int wysokoscOkna = wysokoscEkranuStworka;
@@ -60,12 +61,15 @@ public class oknoEkranuStworka extends JPanel implements zmienneGlobalne, obiekt
 		
 		if(this.pierwszeRysowaniePlanszy){
 			stworekUsera.paint(g2d);
+			
+			tloPomieszczenia.zaladujGrafike(tloGry);
+			tloPomieszczenia.paint(g2d);
+			
+			
 			this.pierwszeRysowaniePlanszy = false;
 		}
 		
-		g2d.setColor(new Color(255,255,255));
-		g2d.fillRect(0, 0, 300, 400);
-		
+		this.dodajTlo(g2d);
 		this.dodajStworka(g2d);
 		
 	}
@@ -75,6 +79,13 @@ public class oknoEkranuStworka extends JPanel implements zmienneGlobalne, obiekt
 	 */
 	public void dodajStworka(Graphics2D g2d_pobrany){
 		stworekUsera.rysujStworka(g2d_pobrany);
+	}
+	
+	/*
+	 * Metoda dodaje tlo na plansze
+	 */
+	public void dodajTlo(Graphics2D g2d_pobrany){
+		tloPomieszczenia.rysuj(g2d_pobrany);
 	}
 	
 	/*

@@ -1,6 +1,7 @@
 package timery;
 
 import interfejsy.obiektyEkranow;
+import interfejsy.obiektyPlanszy;
 import interfejsy.zmienneGlobalne;
 
 import java.util.TimerTask;
@@ -12,7 +13,7 @@ import java.util.TimerTask;
  * @author Lukasz Flak
  *
  */
-public class glowneZadanieTimera extends TimerTask implements zmienneGlobalne, obiektyEkranow{
+public class glowneZadanieTimera extends TimerTask implements zmienneGlobalne, obiektyEkranow, obiektyPlanszy{
 	
 	public void run(){
 		while(true){
