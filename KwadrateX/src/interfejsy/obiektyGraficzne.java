@@ -35,7 +35,11 @@ public interface obiektyGraficzne {
 	kwadratexObrazek ekranStworkaRamaGora = new kwadratexObrazek(0,0,"src/obrazki/ekranStworka/ekranStworkaRamaGora.png");
 	kwadratexObrazek ekranStworkaRamaDol = new kwadratexObrazek(0,495,"src/obrazki/ekranStworka/ekranStworkaRamaDol.png");
 	/*
-	 * Obrazki dla STORKA
+	 * Obiekty grafik tla
 	 */
-	kwadratexObrazek tloGryObrazek = new kwadratexObrazek("src/obrazki/ekranPomieszczen/tlo.png");
+	kwadratexObrazek tloGry_grafika = new kwadratexObrazek("src/obrazki/ekranPomieszczen/tlo.png");
+	/*
+	 * Obiekty grafik obiektow na planszy
+	 */
+	kwadratexObrazek obiektKolizyjnyTest_grafika = new kwadratexObrazek("src/obrazki/obiekty/obiektKolizyjny.png");
 }

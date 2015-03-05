@@ -2,8 +2,8 @@ package interfejsy;
 
 import java.util.Timer;
 
+import obiektyPlanszy.stworek;
 import listenery.klawiaturaOpcje;
-import stworek.stworek;
 import timery.glowneZadanieTimera;
 
 /**
@@ -22,8 +22,8 @@ public interface zmienneGlobalne {
 	
 	int wysokoscEkranuStworka = 501;
 	
-	//120fps zatrzymanie
-	long klatkiNaSekunde = 1000/120;
+	//120fps zatrzymanie 1000/120 ok. 8
+	long klatkiNaSekunde = 8;
 	
 	//obsluga zdarzen klawiatury
 	klawiaturaOpcje klawiaturaListener = new klawiaturaOpcje();

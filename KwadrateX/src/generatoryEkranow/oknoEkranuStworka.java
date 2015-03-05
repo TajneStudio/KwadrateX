@@ -68,7 +68,15 @@ public class oknoEkranuStworka extends JPanel implements zmienneGlobalne, obiekt
 		
 		this.dodajTlo(g2d);
 		this.dodajStworka(g2d);
+		this.dodajObiektyKolizyjne(g2d);
 		
+	}
+	
+	/*
+	 * Metoda dodaje obiekty kolizyjne na plansze
+	 */
+	public void dodajObiektyKolizyjne(Graphics2D g2d_pobrany){
+		obiektyKolizyjne.rysujObiektyKolizyjne(g2d_pobrany);
 	}
 	
 	/*
@@ -94,7 +102,8 @@ public class oknoEkranuStworka extends JPanel implements zmienneGlobalne, obiekt
 	 */
 	public void inicjujElementyPlanszy(Graphics2D g2d_pobrany){
 		//tak obslugujemy klase kwadratexGrafika TLO GRY
-		tloGry.zaladujGrafike(tloGryObrazek);
+		obiektyKolizyjne.zaladujGrafikiDoObiektow(g2d_pobrany);
+		tloGry.zaladujGrafike(tloGry_grafika);
 		tloGry.paint(g2d_pobrany);
 	}
 	

@@ -1,4 +1,4 @@
-package stworek;
+package obiektyPlanszy;
 
 import interfejsy.obiektyGraficzne;
 

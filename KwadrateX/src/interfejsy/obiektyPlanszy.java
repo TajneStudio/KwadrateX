@@ -1,7 +1,8 @@
 package interfejsy;
 
+import funkcjeGry.generatorObiektowKolizyjnych;
+import obiektyPlanszy.stworek;
 import klasyPomocnicze.kwadratexGrafika;
-import stworek.stworek;
 
 /**
  * 
@@ -18,4 +19,8 @@ public interface obiektyPlanszy {
 	
 	//tloGry
 	kwadratexGrafika tloGry = new kwadratexGrafika(0.0d,0.0d);
+	
+	//obiekty kolizyjne
+	generatorObiektowKolizyjnych obiektyKolizyjne = new generatorObiektowKolizyjnych();
+	
 }
