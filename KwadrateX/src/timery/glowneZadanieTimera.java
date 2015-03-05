@@ -1,5 +1,6 @@
 package timery;
 
+import funkcjeGry.detekcjaKolizji;
 import interfejsy.obiektyEkranow;
 import interfejsy.obiektyPlanszy;
 import interfejsy.zmienneGlobalne;
@@ -15,9 +16,17 @@ import java.util.TimerTask;
  */
 public class glowneZadanieTimera extends TimerTask implements zmienneGlobalne, obiektyEkranow, obiektyPlanszy{
 	
+	private detekcjaKolizji systemKolizji = new detekcjaKolizji();
+	
 	public void run(){
 		while(true){
+			//uruchom funkcje klawiatury
 			this.uruchomFunkcjeKlawiatury();
+			
+			//uruchom detekcje kolizji
+			systemKolizji.wykryjKolizje(stworekUsera, obiektyKolizyjne.gettablicaObiektowKolizyjnych());
+			
+			//odrysuj ponownie ekran
 			ekranStworka.repaint();
 			
 			//zatrzymywanie zegara

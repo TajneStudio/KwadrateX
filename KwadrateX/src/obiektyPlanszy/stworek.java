@@ -118,6 +118,7 @@ public class stworek extends JPanel implements obiektyGraficzne{
 	 */
 	public void ustawPodstawoweParametryStworka(){
 		this.setBounds(0, 0, this.szerokoscStworkaPoczatkowa, this.wysokoscStworkaPoczatkowa);
+		this.plikGraficznyStworka = new BufferedImage( this.getWidth(),this.getHeight(), BufferedImage.TYPE_INT_RGB);
 		this.setVisible(true);
 	}
 	
@@ -129,7 +130,6 @@ public class stworek extends JPanel implements obiektyGraficzne{
 	 */
     public void paint(Graphics g) {
     	if(this.pierwszeRysowanieStworka){
-    		this.plikGraficznyStworka = new BufferedImage( this.getWidth(),this.getHeight(), BufferedImage.TYPE_INT_RGB);
 	    	Graphics2D bf_draw = this.plikGraficznyStworka.createGraphics();
 	    	
 	    	//generacja stworka
@@ -263,5 +263,30 @@ public class stworek extends JPanel implements obiektyGraficzne{
     	//odrysuj stworka na ekranie
     	g2d_ekranuStworka.drawImage(this.plikGraficznyStworka,0,0,null);
     	
+    }
+    
+    /*
+     * Getter pozycji X
+     */
+    public double getStworekX(){
+    	return this.pozycjaX;
+    }
+    /*
+     * Getter pozycji Y
+     */
+    public double getStworekY(){
+    	return this.pozycjaY;
+    }
+    /*
+     * Getter szerokosci
+     */
+    public double getStworekSzerokosc(){
+    	return this.plikGraficznyStworka.getWidth()*this.skalaXstworka;
+    }
+    /*
+     * Getter wysokosci
+     */
+    public double getStworekWysokosc(){
+    	return this.plikGraficznyStworka.getHeight()*this.skalaYstworka;
     }
 }
