@@ -1,0 +1,21 @@
+#panel_up{
+	margin-bottom:15px;
+	padding-bottom:15px;
+	border-bottom:1px solid #ddd;
+}
+#panel_down{
+	margin-top:15px;
+	padding-top:15px;
+	border-top:1px solid #ddd;
+}
+
+#obrazekSelect > div{
+	float:left;
+	width:50%;
+}
+#obrazekSelect .selectorPliku{
+	
+}
+#obrazekSelect .obrazek{
+	text-align:center;
+}

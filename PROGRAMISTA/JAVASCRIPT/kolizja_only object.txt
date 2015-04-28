@@ -1,0 +1,25 @@
+/*
+		if (this.pozycjaX < objekt.pozycjaX + objekt.szerokoscPoczatkowa  && this.pozycjaX + this.szerokoscPoczatkowa  > objekt.pozycjaX &&
+			this.pozycjaY < objekt.pozycjaY + objekt.wysokoscPoczatkowa && this.pozycjaY + this.wysokoscPoczatkowa > objekt.pozycjaY) {
+			
+			//gora
+			if(this.pozycjaY < objekt.pozycjaY + objekt.wysokoscPoczatkowa/2){
+				this.pozycjaY -= this.predkosc;
+			}
+			//dol
+			if(this.pozycjaY + this.wysokoscPoczatkowa/2 > objekt.pozycjaY){
+				this.pozycjaY += this.predkosc;
+			}
+			
+			//lewo
+			if(this.pozycjaX < objekt.pozycjaX + objekt.szerokoscPoczatkowa/2){
+				this.pozycjaX -= this.predkosc;
+			}
+			
+			//prawo
+			if(this.pozycjaX + this.szerokoscPoczatkowa/2 > objekt.pozycjaX){
+				this.pozycjaX += this.predkosc;
+			}
+			
+		}
+*/

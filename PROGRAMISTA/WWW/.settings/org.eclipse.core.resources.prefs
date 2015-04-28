@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//application/modules/gra/controllers/gra.php=UTF-8
+encoding//application/modules/gra/views/gra_index_view.js=UTF-8
+encoding//application/modules/gra/views/gra_index_view.php=UTF-8
+encoding//application/modules/newsy/controllers/newsy.php=UTF-8
+encoding//application/modules/newsy/models/newsy_model.php=UTF-8
+encoding//application/modules/newsy/views/newsy_index_view.php=UTF-8
+encoding//application/modules/newsy/views/newsy_pokaz_news_view.php=UTF-8
+encoding//application/modules/newsy/views/newsy_strona_view.php=UTF-8
+encoding//application/modules/strona_startowa/controllers/strona_startowa.php=UTF-8
+encoding//application/modules/strona_startowa/views/strona_startowa_authenication_error_view.css=UTF-8
+encoding//application/modules/strona_startowa/views/strona_startowa_authenication_error_view.js=UTF-8
+encoding//application/modules/strona_startowa/views/strona_startowa_authenication_error_view.php=UTF-8
+encoding//application/modules/strona_startowa/views/strona_startowa_index_view.css=UTF-8
+encoding//application/modules/strona_startowa/views/strona_startowa_index_view.js=UTF-8
+encoding//application/modules/strona_startowa/views/strona_startowa_index_view.php=UTF-8

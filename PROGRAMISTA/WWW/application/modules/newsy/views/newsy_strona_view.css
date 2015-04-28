@@ -1,0 +1,12 @@
+.aktualnosc .zawartosc h2{
+	margin-bottom:8px;
+}
+.aktualnosc .zawartosc > h5:last-of-type{
+	margin-bottom:18px;
+}
+.aktualnosc .zawartosc > .read-more{
+	margin-top:18px;	
+}
+.aktualnosc .zawartosc > .read-more h5{
+	margin-top:23px;	
+}
