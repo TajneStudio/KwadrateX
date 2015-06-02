@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class MX_Loader</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class MX_Loader</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Modular Extensions - HMVC</p>
+<p class="description"><p>Adapted from the CodeIgniter Core Classes</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> ExpressionEngine Dev Team</li>
+				<li><span class="field">version:</span> <p>5.4</p><p>Permission is hereby granted, free of charge, to any person obtaining a copy  of this software and associated documentation files (the &quot;Software&quot;), to deal  in the Software without restriction, including without limitation the rights  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  copies of the Software, and to permit persons to whom the Software is  furnished to do so, subject to the following conditions:</p><p>The above copyright notice and this permission notice shall be included in  all copies or substantial portions of the Software.</p><p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN  THE SOFTWARE.</p></li>
+				<li><span class="field">copyright:</span> Copyright (c) 2011 Wiredesignz</li>
+				<li><span class="field">link:</span> <a href="http://codeigniter.com">Description:
+ This library extends the CodeIgniter CI_Loader class
+ and adds features allowing use of modules and the HMVC design pattern.
+
+ Install this file as application/third_party/MX/Loader.php</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_application---third_party---MX---Loader.php.html">/application/third_party/MX/Loader.php</a> (line <span class="field">36</span>)
+		</p>
+		
+				
+		<pre><a href="../../CodeIgniter/Libraries/CI_Loader.html">CI_Loader</a>
+   |
+   --MX_Loader</pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../../CodeIgniter/Libraries/MY_Loader.html">MY_Loader</a></td>
+					<td>
+											Modular Extensions - HMVC
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_ci_cached_vars" title="details" class="var-name">$_ci_cached_vars</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_ci_plugins" title="details" class="var-name">$_ci_plugins</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_module" title="details" class="var-name">$_module</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																				
+												<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#config" title="details" class="method-name">config</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$file</span> = <span class="var-default">'config'</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$use_sections</span> = <span class="var-default">FALSE</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$fail_gracefully</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#database" title="details" class="method-name">database</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$return</span> = <span class="var-default">FALSE</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$active_record</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#helper" title="details" class="method-name">helper</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$helper</span> = <span class="var-default">array()</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#helpers" title="details" class="method-name">helpers</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$helpers</span> = <span class="var-default">array()</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#initialize" title="details" class="method-name">initialize</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$controller</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#language" title="details" class="method-name">language</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$langfile</span> = <span class="var-default">array()</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$idiom</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$return</span> = <span class="var-default">FALSE</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$add_suffix</span> = <span class="var-default">TRUE</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$alt_path</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#languages" title="details" class="method-name">languages</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$languages</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#libraries" title="details" class="method-name">libraries</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$libraries</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#library" title="details" class="method-name">library</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$library</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">NULL</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$object_name</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#model" title="details" class="method-name">model</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$model</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$object_name</span> = <span class="var-default">NULL</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$connect</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#models" title="details" class="method-name">models</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$models</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#module" title="details" class="method-name">module</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$module</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#modules" title="details" class="method-name">modules</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$modules</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#plugin" title="details" class="method-name">plugin</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$plugin</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#plugins" title="details" class="method-name">plugins</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$plugins</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#view" title="details" class="method-name">view</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$view</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$vars</span> = <span class="var-default">array()</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$return</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_add_module_paths" title="details" class="method-name">_add_module_paths</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$module</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_autoloader" title="details" class="method-name">_autoloader</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$autoload</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_ci_get_component" title="details" class="method-name">&amp;_ci_get_component</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$component</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_ci_is_instance" title="details" class="method-name">_ci_is_instance</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_ci_load" title="details" class="method-name">_ci_load</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$_ci_data</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#__get" title="details" class="method-name">__get</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$class</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$_ci_cached_vars" id="$_ci_cached_vars"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_ci_cached_vars</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">41</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../CodeIgniter/Libraries/CI_Loader.html#var$_ci_cached_vars">CI_Loader::$_ci_cached_vars</a></dt>
+						<dd>List of cached variables</dd>
+					</dl>
+		
+		
+
+</div>
+<a name="var$_ci_plugins" id="$_ci_plugins"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_ci_plugins</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">40</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_module" id="$_module"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_module</span>
+						(line <span class="line-number">38</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../../CodeIgniter/Libraries/CI_Loader.html">CI_Loader</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#var$_base_classes">CI_Loader::$_base_classes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#var$_ci_classes">CI_Loader::$_ci_classes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#var$_ci_helpers">CI_Loader::$_ci_helpers</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#var$_ci_helper_paths">CI_Loader::$_ci_helper_paths</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#var$_ci_library_paths">CI_Loader::$_ci_library_paths</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#var$_ci_loaded_files">CI_Loader::$_ci_loaded_files</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#var$_ci_models">CI_Loader::$_ci_models</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#var$_ci_model_paths">CI_Loader::$_ci_model_paths</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#var$_ci_ob_level">CI_Loader::$_ci_ob_level</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#var$_ci_varmap">CI_Loader::$_ci_varmap</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#var$_ci_view_paths">CI_Loader::$_ci_view_paths</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodconfig" id="config"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">config</span> (line <span class="line-number">88</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load a module config file *</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			config
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$file</span> = <span class="var-default">'config'</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$use_sections</span> = <span class="var-default">FALSE</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$fail_gracefully</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$file</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$use_sections</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$fail_gracefully</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodconfig">CI_Loader::config()</a></dt>
+						<dd>Loads a config file</dd>
+					</dl>
+			
+	</div>
+<a name="methoddatabase" id="database"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">database</span> (line <span class="line-number">93</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load the database drivers *</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			database
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$return</span> = <span class="var-default">FALSE</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$active_record</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$params</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$return</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$active_record</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../CodeIgniter/Libraries/CI_Loader.html#methoddatabase">CI_Loader::database()</a></dt>
+						<dd>Database Loader</dd>
+					</dl>
+			
+	</div>
+<a name="methodhelper" id="helper"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">helper</span> (line <span class="line-number">108</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load a module helper *</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			helper
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$helper</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$helper</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodhelper">CI_Loader::helper()</a></dt>
+						<dd>Load Helper</dd>
+					</dl>
+			
+	</div>
+<a name="methodhelpers" id="helpers"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">helpers</span> (line <span class="line-number">123</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load an array of helpers *</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			helpers
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$helpers</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$helpers</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodhelpers">CI_Loader::helpers()</a></dt>
+						<dd>Load Helpers</dd>
+					</dl>
+			
+	</div>
+<a name="methodinitialize" id="initialize"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">initialize</span> (line <span class="line-number">44</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Initialize the loader variables *</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			initialize
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$controller</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$controller</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodinitialize">CI_Loader::initialize()</a></dt>
+						<dd>Initialize the Loader</dd>
+					</dl>
+			
+	</div>
+<a name="methodlanguage" id="language"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">language</span> (line <span class="line-number">128</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load a module language file *</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			language
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$langfile</span> = <span class="var-default">array()</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$idiom</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$return</span> = <span class="var-default">FALSE</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$add_suffix</span> = <span class="var-default">TRUE</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$alt_path</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$langfile</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$idiom</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$return</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$add_suffix</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$alt_path</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodlanguage">CI_Loader::language()</a></dt>
+						<dd>Loads a language file</dd>
+					</dl>
+			
+	</div>
+<a name="methodlanguages" id="languages"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">languages</span> (line <span class="line-number">132</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			languages
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$languages</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$languages</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlibraries" id="libraries"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">libraries</span> (line <span class="line-number">175</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load an array of libraries *</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			libraries
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$libraries</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$libraries</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlibrary" id="library"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">library</span> (line <span class="line-number">137</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load a module library *</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			library
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$library</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">NULL</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$object_name</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$library</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$params</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$object_name</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodlibrary">CI_Loader::library()</a></dt>
+						<dd>Class Loader</dd>
+					</dl>
+			
+	</div>
+<a name="methodmodel" id="model"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">model</span> (line <span class="line-number">180</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load a module model *</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			model
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$model</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$object_name</span> = <span class="var-default">NULL</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$connect</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$model</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$object_name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$connect</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodmodel">CI_Loader::model()</a></dt>
+						<dd>Model Loader</dd>
+					</dl>
+			
+	</div>
+<a name="methodmodels" id="models"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">models</span> (line <span class="line-number">218</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load an array of models *</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			models
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$models</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$models</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmodule" id="module"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">module</span> (line <span class="line-number">223</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load a module controller *</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			module
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$module</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$module</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmodules" id="modules"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">modules</span> (line <span class="line-number">233</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load an array of controllers *</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			modules
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$modules</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$modules</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodplugin" id="plugin"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">plugin</span> (line <span class="line-number">238</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load a module plugin *</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			plugin
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$plugin</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$plugin</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodplugins" id="plugins"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">plugins</span> (line <span class="line-number">256</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load an array of plugins *</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			plugins
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$plugins</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$plugins</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodview" id="view"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">view</span> (line <span class="line-number">261</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load a module view *</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			view
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$view</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$vars</span> = <span class="var-default">array()</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$return</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$view</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$vars</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$return</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodview">CI_Loader::view()</a></dt>
+						<dd>Load View</dd>
+					</dl>
+			
+	</div>
+<a name="method_add_module_paths" id="_add_module_paths"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_add_module_paths</span> (line <span class="line-number">73</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add a module path loader variables *</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_add_module_paths
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$module</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$module</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_autoloader" id="_autoloader"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_autoloader</span> (line <span class="line-number">336</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Autoload module items *</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_autoloader
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$autoload</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$autoload</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_ci_get_component" id="_ci_get_component"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_ci_get_component</span> (line <span class="line-number">274</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			&amp;_ci_get_component
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$component</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$component</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../CodeIgniter/Libraries/CI_Loader.html#method_ci_get_component">CI_Loader::_ci_get_component()</a></dt>
+						<dd>Get a reference to a specific library or model</dd>
+					</dl>
+			
+	</div>
+<a name="method_ci_is_instance" id="_ci_is_instance"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_ci_is_instance</span> (line <span class="line-number">272</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_ci_is_instance
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_ci_load" id="_ci_load"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_ci_load</span> (line <span class="line-number">282</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_ci_load
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$_ci_data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$_ci_data</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../CodeIgniter/Libraries/CI_Loader.html#method_ci_load">CI_Loader::_ci_load()</a></dt>
+						<dd>Loader</dd>
+					</dl>
+			
+	</div>
+<a name="method__get" id="__get"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">__get</span> (line <span class="line-number">278</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			__get
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$class</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$class</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../CodeIgniter/Libraries/CI_Loader.html">CI_Loader</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#method__construct">CI_Loader::__construct()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodadd_package_path">CI_Loader::add_package_path()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodconfig">CI_Loader::config()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methoddatabase">CI_Loader::database()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methoddbforge">CI_Loader::dbforge()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methoddbutil">CI_Loader::dbutil()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methoddriver">CI_Loader::driver()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodfile">CI_Loader::file()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodget_package_paths">CI_Loader::get_package_paths()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodget_var">CI_Loader::get_var()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodhelper">CI_Loader::helper()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodhelpers">CI_Loader::helpers()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodinitialize">CI_Loader::initialize()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodis_loaded">CI_Loader::is_loaded()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodlanguage">CI_Loader::language()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodlibrary">CI_Loader::library()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodmodel">CI_Loader::model()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodremove_package_path">CI_Loader::remove_package_path()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodvars">CI_Loader::vars()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#methodview">CI_Loader::view()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#method_ci_get_component">CI_Loader::_ci_get_component()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#method_ci_init_class">CI_Loader::_ci_init_class()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#method_ci_load">CI_Loader::_ci_load()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#method_ci_load_class">CI_Loader::_ci_load_class()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#method_ci_object_to_array">CI_Loader::_ci_object_to_array()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Loader.html#method_ci_prep_filename">CI_Loader::_ci_prep_filename()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 02 Jun 2015 08:33:36 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

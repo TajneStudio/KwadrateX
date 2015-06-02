@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>phpDocumentor Parser Errors and Warnings</title>
+			<link rel="stylesheet" href="media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+						<a href="#Post-parsing">Post-parsing</a><br>
+<a href="#ar_acl.php">ar_acl.php</a><br>
+<a href="#Ar_acl.php">Ar_acl.php</a><br>
+<a href="#autoload.php">autoload.php</a><br>
+<a href="#Base.php">Base.php</a><br>
+<a href="#calendar_lang.php">calendar_lang.php</a><br>
+<a href="#Ci.php">Ci.php</a><br>
+<a href="#config.php">config.php</a><br>
+<a href="#Config.php">Config.php</a><br>
+<a href="#constants.php">constants.php</a><br>
+<a href="#Controller.php">Controller.php</a><br>
+<a href="#cubrid_driver.php">cubrid_driver.php</a><br>
+<a href="#cubrid_forge.php">cubrid_forge.php</a><br>
+<a href="#cubrid_result.php">cubrid_result.php</a><br>
+<a href="#cubrid_utility.php">cubrid_utility.php</a><br>
+<a href="#database.php">database.php</a><br>
+<a href="#date_lang.php">date_lang.php</a><br>
+<a href="#DB_cache.php">DB_cache.php</a><br>
+<a href="#DB_driver.php">DB_driver.php</a><br>
+<a href="#DB_forge.php">DB_forge.php</a><br>
+<a href="#db_lang.php">db_lang.php</a><br>
+<a href="#DB_result.php">DB_result.php</a><br>
+<a href="#DB_utility.php">DB_utility.php</a><br>
+<a href="#doctypes.php">doctypes.php</a><br>
+<a href="#email_lang.php">email_lang.php</a><br>
+<a href="#error_404.php">error_404.php</a><br>
+<a href="#error_db.php">error_db.php</a><br>
+<a href="#error_general.php">error_general.php</a><br>
+<a href="#error_php.php">error_php.php</a><br>
+<a href="#example.php">example.php</a><br>
+<a href="#example_authenication_error_view.php">example_authenication_error_view.php</a><br>
+<a href="#example_authenication_view.php">example_authenication_view.php</a><br>
+<a href="#example_index_view.php">example_index_view.php</a><br>
+<a href="#footer.php">footer.php</a><br>
+<a href="#foreign_chars.php">foreign_chars.php</a><br>
+<a href="#form_validation_lang.php">form_validation_lang.php</a><br>
+<a href="#ftp_lang.php">ftp_lang.php</a><br>
+<a href="#gra.php">gra.php</a><br>
+<a href="#gra_authenication_error_view.php">gra_authenication_error_view.php</a><br>
+<a href="#gra_index_view.php">gra_index_view.php</a><br>
+<a href="#gra_model.php">gra_model.php</a><br>
+<a href="#header.php">header.php</a><br>
+<a href="#hooks.php">hooks.php</a><br>
+<a href="#imglib_lang.php">imglib_lang.php</a><br>
+<a href="#index.php">index.php</a><br>
+<a href="#Lang.php">Lang.php</a><br>
+<a href="#Loader.php">Loader.php</a><br>
+<a href="#logowanie.php">logowanie.php</a><br>
+<a href="#logowanie_index_view.php">logowanie_index_view.php</a><br>
+<a href="#logowanie_model.php">logowanie_model.php</a><br>
+<a href="#migration.php">migration.php</a><br>
+<a href="#migration_lang.php">migration_lang.php</a><br>
+<a href="#mimes.php">mimes.php</a><br>
+<a href="#Modules.php">Modules.php</a><br>
+<a href="#mssql_driver.php">mssql_driver.php</a><br>
+<a href="#mssql_forge.php">mssql_forge.php</a><br>
+<a href="#mssql_result.php">mssql_result.php</a><br>
+<a href="#mssql_utility.php">mssql_utility.php</a><br>
+<a href="#mysqli_driver.php">mysqli_driver.php</a><br>
+<a href="#mysqli_forge.php">mysqli_forge.php</a><br>
+<a href="#mysqli_result.php">mysqli_result.php</a><br>
+<a href="#mysqli_utility.php">mysqli_utility.php</a><br>
+<a href="#mysql_driver.php">mysql_driver.php</a><br>
+<a href="#mysql_forge.php">mysql_forge.php</a><br>
+<a href="#mysql_result.php">mysql_result.php</a><br>
+<a href="#mysql_utility.php">mysql_utility.php</a><br>
+<a href="#MY_Loader.php">MY_Loader.php</a><br>
+<a href="#MY_Router.php">MY_Router.php</a><br>
+<a href="#nav_helper.php">nav_helper.php</a><br>
+<a href="#newsy.php">newsy.php</a><br>
+<a href="#newsy_index_view.php">newsy_index_view.php</a><br>
+<a href="#newsy_model.php">newsy_model.php</a><br>
+<a href="#newsy_pokaz_news_view.php">newsy_pokaz_news_view.php</a><br>
+<a href="#newsy_strona_view.php">newsy_strona_view.php</a><br>
+<a href="#number_lang.php">number_lang.php</a><br>
+<a href="#oci8_driver.php">oci8_driver.php</a><br>
+<a href="#oci8_forge.php">oci8_forge.php</a><br>
+<a href="#oci8_result.php">oci8_result.php</a><br>
+<a href="#oci8_utility.php">oci8_utility.php</a><br>
+<a href="#odbc_driver.php">odbc_driver.php</a><br>
+<a href="#odbc_forge.php">odbc_forge.php</a><br>
+<a href="#odbc_result.php">odbc_result.php</a><br>
+<a href="#odbc_utility.php">odbc_utility.php</a><br>
+<a href="#panel_admina.php">panel_admina.php</a><br>
+<a href="#panel_admina_authenication_error_view.php">panel_admina_authenication_error_view.php</a><br>
+<a href="#panel_admina_dodaj_kategorie.php">panel_admina_dodaj_kategorie.php</a><br>
+<a href="#panel_admina_dodaj_newsy.php">panel_admina_dodaj_newsy.php</a><br>
+<a href="#panel_admina_dodaj_rzecz.php">panel_admina_dodaj_rzecz.php</a><br>
+<a href="#panel_admina_edytuj_kategorie.php">panel_admina_edytuj_kategorie.php</a><br>
+<a href="#panel_admina_edytuj_newsy.php">panel_admina_edytuj_newsy.php</a><br>
+<a href="#panel_admina_edytuj_rzecz.php">panel_admina_edytuj_rzecz.php</a><br>
+<a href="#panel_admina_kategorie_view.php">panel_admina_kategorie_view.php</a><br>
+<a href="#panel_admina_model.php">panel_admina_model.php</a><br>
+<a href="#panel_admina_newsy_view.php">panel_admina_newsy_view.php</a><br>
+<a href="#panel_admina_rzeczy_view.php">panel_admina_rzeczy_view.php</a><br>
+<a href="#pdo_driver.php">pdo_driver.php</a><br>
+<a href="#pdo_forge.php">pdo_forge.php</a><br>
+<a href="#pdo_result.php">pdo_result.php</a><br>
+<a href="#pdo_utility.php">pdo_utility.php</a><br>
+<a href="#postgre_driver.php">postgre_driver.php</a><br>
+<a href="#postgre_forge.php">postgre_forge.php</a><br>
+<a href="#postgre_result.php">postgre_result.php</a><br>
+<a href="#postgre_utility.php">postgre_utility.php</a><br>
+<a href="#profiler.php">profiler.php</a><br>
+<a href="#profiler_lang.php">profiler_lang.php</a><br>
+<a href="#rejestracja.php">rejestracja.php</a><br>
+<a href="#rejestracja_index_view.php">rejestracja_index_view.php</a><br>
+<a href="#rejestracja_model.php">rejestracja_model.php</a><br>
+<a href="#Router.php">Router.php</a><br>
+<a href="#routes.php">routes.php</a><br>
+<a href="#Session.php">Session.php</a><br>
+<a href="#smileys.php">smileys.php</a><br>
+<a href="#sqlite_driver.php">sqlite_driver.php</a><br>
+<a href="#sqlite_forge.php">sqlite_forge.php</a><br>
+<a href="#sqlite_result.php">sqlite_result.php</a><br>
+<a href="#sqlite_utility.php">sqlite_utility.php</a><br>
+<a href="#sqlsrv_driver.php">sqlsrv_driver.php</a><br>
+<a href="#sqlsrv_forge.php">sqlsrv_forge.php</a><br>
+<a href="#sqlsrv_result.php">sqlsrv_result.php</a><br>
+<a href="#sqlsrv_utility.php">sqlsrv_utility.php</a><br>
+<a href="#strona_startowa.php">strona_startowa.php</a><br>
+<a href="#strona_startowa_authenication_error_view.php">strona_startowa_authenication_error_view.php</a><br>
+<a href="#strona_startowa_index_view.php">strona_startowa_index_view.php</a><br>
+<a href="#Typography.php">Typography.php</a><br>
+<a href="#unit_test_lang.php">unit_test_lang.php</a><br>
+<a href="#upload_lang.php">upload_lang.php</a><br>
+<a href="#user_agents.php">user_agents.php</a><br>
+<a href="#wylogowanie.php">wylogowanie.php</a><br>
+<a href="#Xmlrpc.php">Xmlrpc.php</a><br>
+<a name="Post-parsing"></a>
+<h1>Post-parsing</h1>
+<h2>Warnings:</h2><br>
+<b>Warning</b> - Class CI_DB_pdo_driver parent CI_DB not found<br>
+<b>Warning</b> - Class CI_DB_postgre_driver parent CI_DB not found<br>
+<b>Warning</b> - Class CI_DB_sqlite_driver parent CI_DB not found<br>
+<b>Warning</b> - Class CI_DB_odbc_driver parent CI_DB not found<br>
+<b>Warning</b> - Class CI_DB_mysqli_driver parent CI_DB not found<br>
+<b>Warning</b> - Class CI_DB_cubrid_driver parent CI_DB not found<br>
+<b>Warning</b> - Class CI_DB_mssql_driver parent CI_DB not found<br>
+<b>Warning</b> - Class CI_DB_mysql_driver parent CI_DB not found<br>
+<b>Warning</b> - Class CI_DB_sqlsrv_driver parent CI_DB not found<br>
+<b>Warning</b> - Class CI_DB_oci8_driver parent CI_DB not found<br>
+<b>Warning</b> - 
+duplicate define element "EXT" in file C:\xampp\htdocs\kwadratex\index.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - class CI_DB_pdo_driver in package CodeIgniter parent not found in @see parent::__construct()<br>
+<b>Warning</b> - class CI_DB_pdo_driver in package CodeIgniter parent not found in @see parent::__construct()<br>
+<b>Warning</b> - class CI_DB_odbc_driver in package CodeIgniter parent not found in @see parent::__construct()<br>
+<b>Warning</b> - class CI_DB_odbc_driver in package CodeIgniter parent not found in @see parent::__construct()<br>
+<a name="acl_helper.php"></a>
+<h1>acl_helper.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 35</b> - File "C:\xampp\htdocs\kwadratex\application\helpers\acl_helper.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Ar_acl.php"></a>
+<h1>Ar_acl.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 32</b> - DocBlock would be page-level, but precedes class "Ar_acl", use another DocBlock to document the file<br>
+<a name="ar_acl.php"></a>
+<h1>ar_acl.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 124</b> - File "C:\xampp\htdocs\kwadratex\application\config\ar_acl.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="autoload.php"></a>
+<h1>autoload.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 115</b> - File "C:\xampp\htdocs\kwadratex\application\config\autoload.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Base.php"></a>
+<h1>Base.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 40</b> - no @package tag was used in a DocBlock for class CI<br>
+<b>Warning on line 59</b> - File "C:\xampp\htdocs\kwadratex\application\third_party\MX\Base.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="calendar_lang.php"></a>
+<h1>calendar_lang.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 50</b> - File "C:\xampp\htdocs\kwadratex\system\language\english\calendar_lang.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Ci.php"></a>
+<h1>Ci.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 39</b> - no @package tag was used in a DocBlock for class CI<br>
+<b>Warning on line 56</b> - File "C:\xampp\htdocs\kwadratex\application\third_party\MX\Ci.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Config.php"></a>
+<h1>Config.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 36</b> - no @package tag was used in a DocBlock for class MX_Config<br>
+<b>Warning on line 70</b> - File "C:\xampp\htdocs\kwadratex\application\third_party\MX\Config.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="config.php"></a>
+<h1>config.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 372</b> - File "C:\xampp\htdocs\kwadratex\application\config\config.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="constants.php"></a>
+<h1>constants.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 40</b> - File "C:\xampp\htdocs\kwadratex\application\config\constants.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Controller.php"></a>
+<h1>Controller.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 39</b> - no @package tag was used in a DocBlock for class MX_Controller<br>
+<b>Warning on line 59</b> - File "C:\xampp\htdocs\kwadratex\application\third_party\MX\Controller.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="cubrid_driver.php"></a>
+<h1>cubrid_driver.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 102</b> - Unknown tag "@cubrid_connect" used<br>
+<h2>Errors:</h2><br>
+<b>Error on line 59</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 102</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 134</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 188</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 205</b> - @access was passed neither "public" nor "private."  Was passed: "private called by execute()"<br>
+<a name="cubrid_forge.php"></a>
+<h1>cubrid_forge.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_cubrid_forge<br>
+<a name="cubrid_result.php"></a>
+<h1>cubrid_result.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 26</b> - no @package tag was used in a DocBlock for class CI_DB_cubrid_result<br>
+<a name="cubrid_utility.php"></a>
+<h1>cubrid_utility.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_cubrid_utility<br>
+<a name="database.php"></a>
+<h1>database.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 68</b> - File "C:\xampp\htdocs\kwadratex\application\config\database.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="date_lang.php"></a>
+<h1>date_lang.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 60</b> - File "C:\xampp\htdocs\kwadratex\system\language\english\date_lang.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="DB_cache.php"></a>
+<h1>DB_cache.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_Cache<br>
+<a name="DB_forge.php"></a>
+<h1>DB_forge.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_forge<br>
+<a name="db_lang.php"></a>
+<h1>db_lang.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 28</b> - File "C:\xampp\htdocs\kwadratex\system\language\english\db_lang.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="DB_result.php"></a>
+<h1>DB_result.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for class CI_DB_result<br>
+<a name="DB_utility.php"></a>
+<h1>DB_utility.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_utility<br>
+<a name="doctypes.php"></a>
+<h1>doctypes.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 14</b> - File "C:\xampp\htdocs\kwadratex\application\config\doctypes.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="email_lang.php"></a>
+<h1>email_lang.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 23</b> - File "C:\xampp\htdocs\kwadratex\system\language\english\email_lang.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="error_404.php"></a>
+<h1>error_404.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 61</b> - File "C:\xampp\htdocs\kwadratex\application\errors\error_404.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="error_db.php"></a>
+<h1>error_db.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 61</b> - File "C:\xampp\htdocs\kwadratex\application\errors\error_db.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="error_general.php"></a>
+<h1>error_general.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 61</b> - File "C:\xampp\htdocs\kwadratex\application\errors\error_general.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="error_php.php"></a>
+<h1>error_php.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - File "C:\xampp\htdocs\kwadratex\application\errors\error_php.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="example.php"></a>
+<h1>example.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class Example<br>
+<b>Warning on line 68</b> - File "C:\xampp\htdocs\kwadratex\application\modules\example\controllers\example.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="example_authenication_error_view.php"></a>
+<h1>example_authenication_error_view.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 23</b> - File "C:\xampp\htdocs\kwadratex\application\modules\example\views\example_authenication_error_view.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="example_authenication_view.php"></a>
+<h1>example_authenication_view.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 19</b> - File "C:\xampp\htdocs\kwadratex\application\modules\example\views\example_authenication_view.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="example_index_view.php"></a>
+<h1>example_index_view.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 19</b> - File "C:\xampp\htdocs\kwadratex\application\modules\example\views\example_index_view.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="footer.php"></a>
+<h1>footer.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 19</b> - File "C:\xampp\htdocs\kwadratex\template\static\footer.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="foreign_chars.php"></a>
+<h1>foreign_chars.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 63</b> - File "C:\xampp\htdocs\kwadratex\application\config\foreign_chars.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="form_validation_lang.php"></a>
+<h1>form_validation_lang.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 28</b> - File "C:\xampp\htdocs\kwadratex\system\language\english\form_validation_lang.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="ftp_lang.php"></a>
+<h1>ftp_lang.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 17</b> - File "C:\xampp\htdocs\kwadratex\system\language\english\ftp_lang.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="gra.php"></a>
+<h1>gra.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class Gra<br>
+<b>Warning on line 57</b> - File "C:\xampp\htdocs\kwadratex\application\modules\gra\controllers\gra.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="gra_authenication_error_view.php"></a>
+<h1>gra_authenication_error_view.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 23</b> - File "C:\xampp\htdocs\kwadratex\application\modules\gra\views\gra_authenication_error_view.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="gra_index_view.php"></a>
+<h1>gra_index_view.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 21</b> - File "C:\xampp\htdocs\kwadratex\application\modules\gra\views\gra_index_view.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="gra_model.php"></a>
+<h1>gra_model.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class gra_model<br>
+<b>Warning on line 207</b> - File "C:\xampp\htdocs\kwadratex\application\modules\gra\models\gra_model.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="header.php"></a>
+<h1>header.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 112</b> - File "C:\xampp\htdocs\kwadratex\template\static\header.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="hooks.php"></a>
+<h1>hooks.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 15</b> - File "C:\xampp\htdocs\kwadratex\application\config\hooks.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="imglib_lang.php"></a>
+<h1>imglib_lang.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 23</b> - File "C:\xampp\htdocs\kwadratex\system\language\english\imglib_lang.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="index.php"></a>
+<h1>index.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 190</b> - 
+duplicate define element "APPPATH" in file C:\xampp\htdocs\kwadratex\index.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 204</b> - File "C:\xampp\htdocs\kwadratex\index.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Lang.php"></a>
+<h1>Lang.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 36</b> - no @package tag was used in a DocBlock for class MX_Lang<br>
+<b>Warning on line 69</b> - File "C:\xampp\htdocs\kwadratex\application\third_party\MX\Lang.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Loader.php"></a>
+<h1>Loader.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 36</b> - no @package tag was used in a DocBlock for class MX_Loader<br>
+<b>Warning on line 417</b> - File "C:\xampp\htdocs\kwadratex\application\third_party\MX\Loader.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="logowanie.php"></a>
+<h1>logowanie.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class Logowanie<br>
+<b>Warning on line 77</b> - File "C:\xampp\htdocs\kwadratex\application\modules\relog\controllers\logowanie.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="logowanie_index_view.php"></a>
+<h1>logowanie_index_view.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 65</b> - File "C:\xampp\htdocs\kwadratex\application\modules\relog\views\logowanie_index_view.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="logowanie_model.php"></a>
+<h1>logowanie_model.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class Logowanie_model<br>
+<b>Warning on line 73</b> - File "C:\xampp\htdocs\kwadratex\application\modules\relog\models\logowanie_model.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="migration.php"></a>
+<h1>migration.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 40</b> - File "C:\xampp\htdocs\kwadratex\application\config\migration.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="migration_lang.php"></a>
+<h1>migration_lang.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 12</b> - File "C:\xampp\htdocs\kwadratex\system\language\english\migration_lang.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="mimes.php"></a>
+<h1>mimes.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 105</b> - File "C:\xampp\htdocs\kwadratex\application\config\mimes.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Modules.php"></a>
+<h1>Modules.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 48</b> - no @package tag was used in a DocBlock for class Modules<br>
+<b>Warning on line 220</b> - File "C:\xampp\htdocs\kwadratex\application\third_party\MX\Modules.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="mssql_forge.php"></a>
+<h1>mssql_forge.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_mssql_forge<br>
+<a name="mssql_result.php"></a>
+<h1>mssql_result.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 26</b> - no @package tag was used in a DocBlock for class CI_DB_mssql_result<br>
+<a name="mssql_utility.php"></a>
+<h1>mssql_utility.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_mssql_utility<br>
+<a name="mysqli_forge.php"></a>
+<h1>mysqli_forge.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_mysqli_forge<br>
+<a name="mysqli_result.php"></a>
+<h1>mysqli_result.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 26</b> - no @package tag was used in a DocBlock for class CI_DB_mysqli_result<br>
+<a name="mysqli_utility.php"></a>
+<h1>mysqli_utility.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_mysqli_utility<br>
+<a name="mysql_forge.php"></a>
+<h1>mysql_forge.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_mysql_forge<br>
+<a name="mysql_result.php"></a>
+<h1>mysql_result.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 26</b> - no @package tag was used in a DocBlock for class CI_DB_mysql_result<br>
+<a name="mysql_utility.php"></a>
+<h1>mysql_utility.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_mysql_utility<br>
+<a name="MY_Loader.php"></a>
+<h1>MY_Loader.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 5</b> - no @package tag was used in a DocBlock for class MY_Loader<br>
+<b>Warning on line 5</b> - File "C:\xampp\htdocs\kwadratex\application\core\MY_Loader.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="MY_Router.php"></a>
+<h1>MY_Router.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 5</b> - File "C:\xampp\htdocs\kwadratex\application\core\MY_Router.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<b>Warning on line 5</b> - no @package tag was used in a DocBlock for class MY_Router<br>
+<a name="nav_helper.php"></a>
+<h1>nav_helper.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 11</b> - File "C:\xampp\htdocs\kwadratex\application\helpers\nav_helper.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="newsy.php"></a>
+<h1>newsy.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class Newsy<br>
+<b>Warning on line 81</b> - File "C:\xampp\htdocs\kwadratex\application\modules\newsy\controllers\newsy.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="newsy_index_view.php"></a>
+<h1>newsy_index_view.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 45</b> - File "C:\xampp\htdocs\kwadratex\application\modules\newsy\views\newsy_index_view.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="newsy_model.php"></a>
+<h1>newsy_model.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class newsy_model<br>
+<b>Warning on line 132</b> - File "C:\xampp\htdocs\kwadratex\application\modules\newsy\models\newsy_model.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="newsy_pokaz_news_view.php"></a>
+<h1>newsy_pokaz_news_view.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 45</b> - File "C:\xampp\htdocs\kwadratex\application\modules\newsy\views\newsy_pokaz_news_view.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="newsy_strona_view.php"></a>
+<h1>newsy_strona_view.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 53</b> - File "C:\xampp\htdocs\kwadratex\application\modules\newsy\views\newsy_strona_view.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="number_lang.php"></a>
+<h1>number_lang.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - File "C:\xampp\htdocs\kwadratex\system\language\english\number_lang.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="oci8_driver.php"></a>
+<h1>oci8_driver.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 41</b> - no @package tag was used in a DocBlock for class CI_DB_oci8_driver<br>
+<h2>Errors:</h2><br>
+<b>Error on line 77</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 90</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 120</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 164</b> - @access was passed neither "public" nor "private."  Was passed: "protected  called by the base class"<br>
+<b>Error on line 200</b> - @access was passed neither "public" nor "private."  Was passed: "private called by execute()"<br>
+<a name="oci8_forge.php"></a>
+<h1>oci8_forge.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_oci8_forge<br>
+<a name="oci8_result.php"></a>
+<h1>oci8_result.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 26</b> - no @package tag was used in a DocBlock for class CI_DB_oci8_result<br>
+<a name="oci8_utility.php"></a>
+<h1>oci8_utility.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_oci8_utility<br>
+<a name="odbc_forge.php"></a>
+<h1>odbc_forge.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_odbc_forge<br>
+<a name="odbc_result.php"></a>
+<h1>odbc_result.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 26</b> - no @package tag was used in a DocBlock for class CI_DB_odbc_result<br>
+<a name="odbc_utility.php"></a>
+<h1>odbc_utility.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_odbc_utility<br>
+<a name="panel_admina.php"></a>
+<h1>panel_admina.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 10</b> - no @package tag was used in a DocBlock for class Panel_admina<br>
+<b>Warning on line 642</b> - File "C:\xampp\htdocs\kwadratex\application\modules\panel_admina\controllers\panel_admina.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="panel_admina_authenication_error_view.php"></a>
+<h1>panel_admina_authenication_error_view.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 23</b> - File "C:\xampp\htdocs\kwadratex\application\modules\panel_admina\views\panel_admina_authenication_error_view.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="panel_admina_dodaj_kategorie.php"></a>
+<h1>panel_admina_dodaj_kategorie.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 100</b> - File "C:\xampp\htdocs\kwadratex\application\modules\panel_admina\views\panel_admina_dodaj_kategorie.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="panel_admina_dodaj_newsy.php"></a>
+<h1>panel_admina_dodaj_newsy.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 128</b> - File "C:\xampp\htdocs\kwadratex\application\modules\panel_admina\views\panel_admina_dodaj_newsy.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="panel_admina_dodaj_rzecz.php"></a>
+<h1>panel_admina_dodaj_rzecz.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 126</b> - File "C:\xampp\htdocs\kwadratex\application\modules\panel_admina\views\panel_admina_dodaj_rzecz.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="panel_admina_edytuj_kategorie.php"></a>
+<h1>panel_admina_edytuj_kategorie.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 100</b> - File "C:\xampp\htdocs\kwadratex\application\modules\panel_admina\views\panel_admina_edytuj_kategorie.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="panel_admina_edytuj_newsy.php"></a>
+<h1>panel_admina_edytuj_newsy.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 127</b> - File "C:\xampp\htdocs\kwadratex\application\modules\panel_admina\views\panel_admina_edytuj_newsy.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="panel_admina_edytuj_rzecz.php"></a>
+<h1>panel_admina_edytuj_rzecz.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 126</b> - File "C:\xampp\htdocs\kwadratex\application\modules\panel_admina\views\panel_admina_edytuj_rzecz.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="panel_admina_kategorie_view.php"></a>
+<h1>panel_admina_kategorie_view.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 62</b> - File "C:\xampp\htdocs\kwadratex\application\modules\panel_admina\views\panel_admina_kategorie_view.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="panel_admina_model.php"></a>
+<h1>panel_admina_model.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class panel_admina_model<br>
+<b>Warning on line 336</b> - File "C:\xampp\htdocs\kwadratex\application\modules\panel_admina\models\panel_admina_model.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="panel_admina_newsy_view.php"></a>
+<h1>panel_admina_newsy_view.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 75</b> - File "C:\xampp\htdocs\kwadratex\application\modules\panel_admina\views\panel_admina_newsy_view.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="panel_admina_rzeczy_view.php"></a>
+<h1>panel_admina_rzeczy_view.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 64</b> - File "C:\xampp\htdocs\kwadratex\application\modules\panel_admina\views\panel_admina_rzeczy_view.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="pdo_forge.php"></a>
+<h1>pdo_forge.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_pdo_forge<br>
+<a name="pdo_result.php"></a>
+<h1>pdo_result.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 26</b> - no @package tag was used in a DocBlock for class CI_DB_pdo_result<br>
+<a name="pdo_utility.php"></a>
+<h1>pdo_utility.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_pdo_utility<br>
+<a name="postgre_forge.php"></a>
+<h1>postgre_forge.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_postgre_forge<br>
+<a name="postgre_result.php"></a>
+<h1>postgre_result.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 26</b> - no @package tag was used in a DocBlock for class CI_DB_postgre_result<br>
+<a name="postgre_utility.php"></a>
+<h1>postgre_utility.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_postgre_utility<br>
+<a name="profiler.php"></a>
+<h1>profiler.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 16</b> - File "C:\xampp\htdocs\kwadratex\application\config\profiler.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="profiler_lang.php"></a>
+<h1>profiler_lang.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - File "C:\xampp\htdocs\kwadratex\system\language\english\profiler_lang.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="rejestracja.php"></a>
+<h1>rejestracja.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class Rejestracja<br>
+<b>Warning on line 127</b> - File "C:\xampp\htdocs\kwadratex\application\modules\relog\controllers\rejestracja.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="rejestracja_index_view.php"></a>
+<h1>rejestracja_index_view.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 90</b> - File "C:\xampp\htdocs\kwadratex\application\modules\relog\views\rejestracja_index_view.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="rejestracja_model.php"></a>
+<h1>rejestracja_model.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - no @package tag was used in a DocBlock for class Rejestracja_model<br>
+<b>Warning on line 123</b> - File "C:\xampp\htdocs\kwadratex\application\modules\relog\models\rejestracja_model.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Router.php"></a>
+<h1>Router.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 38</b> - no @package tag was used in a DocBlock for class MX_Router<br>
+<b>Warning on line 136</b> - File "C:\xampp\htdocs\kwadratex\application\third_party\MX\Router.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="routes.php"></a>
+<h1>routes.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 73</b> - File "C:\xampp\htdocs\kwadratex\application\config\routes.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="smileys.php"></a>
+<h1>smileys.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 65</b> - File "C:\xampp\htdocs\kwadratex\application\config\smileys.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="sqlite_forge.php"></a>
+<h1>sqlite_forge.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_sqlite_forge<br>
+<a name="sqlite_result.php"></a>
+<h1>sqlite_result.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 26</b> - no @package tag was used in a DocBlock for class CI_DB_sqlite_result<br>
+<a name="sqlite_utility.php"></a>
+<h1>sqlite_utility.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_sqlite_utility<br>
+<a name="sqlsrv_forge.php"></a>
+<h1>sqlsrv_forge.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_sqlsrv_forge<br>
+<a name="sqlsrv_result.php"></a>
+<h1>sqlsrv_result.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 26</b> - no @package tag was used in a DocBlock for class CI_DB_sqlsrv_result<br>
+<a name="sqlsrv_utility.php"></a>
+<h1>sqlsrv_utility.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - no @package tag was used in a DocBlock for class CI_DB_sqlsrv_utility<br>
+<a name="strona_startowa.php"></a>
+<h1>strona_startowa.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class Strona_startowa<br>
+<b>Warning on line 37</b> - File "C:\xampp\htdocs\kwadratex\application\modules\strona_startowa\controllers\strona_startowa.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="strona_startowa_authenication_error_view.php"></a>
+<h1>strona_startowa_authenication_error_view.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 23</b> - File "C:\xampp\htdocs\kwadratex\application\modules\strona_startowa\views\strona_startowa_authenication_error_view.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="strona_startowa_index_view.php"></a>
+<h1>strona_startowa_index_view.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 17</b> - File "C:\xampp\htdocs\kwadratex\application\modules\strona_startowa\views\strona_startowa_index_view.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Typography.php"></a>
+<h1>Typography.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 26</b> - no @package tag was used in a DocBlock for class CI_Typography<br>
+<a name="unit_test_lang.php"></a>
+<h1>unit_test_lang.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 24</b> - File "C:\xampp\htdocs\kwadratex\system\language\english\unit_test_lang.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="upload_lang.php"></a>
+<h1>upload_lang.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 21</b> - File "C:\xampp\htdocs\kwadratex\system\language\english\upload_lang.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="user_agents.php"></a>
+<h1>user_agents.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 177</b> - File "C:\xampp\htdocs\kwadratex\application\config\user_agents.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="wylogowanie.php"></a>
+<h1>wylogowanie.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 2</b> - no @package tag was used in a DocBlock for class Wylogowanie<br>
+<b>Warning on line 14</b> - File "C:\xampp\htdocs\kwadratex\application\modules\relog\controllers\wylogowanie.php" has no page-level DocBlock, use @package in the first DocBlock to create one<br>
+<a name="Xmlrpc.php"></a>
+<h1>Xmlrpc.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 353</b> - no @package tag was used in a DocBlock for class XML_RPC_Client<br>
+<b>Warning on line 431</b> - no @package tag was used in a DocBlock for class XML_RPC_Response<br>
+<b>Warning on line 610</b> - no @package tag was used in a DocBlock for class XML_RPC_Message<br>
+<b>Warning on line 1209</b> - no @package tag was used in a DocBlock for class XML_RPC_Values<br>
+<a name="DB_driver.php"></a>
+<h1>DB_driver.php</h1>
+<h2>Errors:</h2><br>
+<b>Error on line 102</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the constructor"<br>
+<a name="mssql_driver.php"></a>
+<h1>mssql_driver.php</h1>
+<h2>Errors:</h2><br>
+<b>Error on line 55</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 73</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 107</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 139</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 156</b> - @access was passed neither "public" nor "private."  Was passed: "private called by execute()"<br>
+<a name="mysqli_driver.php"></a>
+<h1>mysqli_driver.php</h1>
+<h2>Errors:</h2><br>
+<b>Error on line 67</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 88</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 120</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 175</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 193</b> - @access was passed neither "public" nor "private."  Was passed: "private called by execute()"<br>
+<a name="mysql_driver.php"></a>
+<h1>mysql_driver.php</h1>
+<h2>Errors:</h2><br>
+<b>Error on line 65</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 83</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 120</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 175</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 192</b> - @access was passed neither "public" nor "private."  Was passed: "private called by execute()"<br>
+<a name="odbc_driver.php"></a>
+<h1>odbc_driver.php</h1>
+<h2>Errors:</h2><br>
+<b>Error on line 63</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 76</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 105</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 149</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 166</b> - @access was passed neither "public" nor "private."  Was passed: "private called by execute()"<br>
+<a name="pdo_driver.php"></a>
+<h1>pdo_driver.php</h1>
+<h2>Errors:</h2><br>
+<b>Error on line 93</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 108</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 144</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 188</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 224</b> - @access was passed neither "public" nor "private."  Was passed: "private called by execute()"<br>
+<a name="postgre_driver.php"></a>
+<h1>postgre_driver.php</h1>
+<h2>Errors:</h2><br>
+<b>Error on line 83</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 96</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 128</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 172</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 189</b> - @access was passed neither "public" nor "private."  Was passed: "private called by execute()"<br>
+<a name="Session.php"></a>
+<h1>Session.php</h1>
+<h2>Errors:</h2><br>
+<b>Error on line 500</b> - @access was passed neither "public" nor "private."  Was passed: "array"<br>
+<a name="sqlite_driver.php"></a>
+<h1>sqlite_driver.php</h1>
+<h2>Errors:</h2><br>
+<b>Error on line 57</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 82</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 123</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 166</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 183</b> - @access was passed neither "public" nor "private."  Was passed: "private called by execute()"<br>
+<a name="sqlsrv_driver.php"></a>
+<h1>sqlsrv_driver.php</h1>
+<h2>Errors:</h2><br>
+<b>Error on line 55</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 86</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 115</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 145</b> - @access was passed neither "public" nor "private."  Was passed: "private called by the base class"<br>
+<b>Error on line 165</b> - @access was passed neither "public" nor "private."  Was passed: "private called by execute()"<br>
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 02 Jun 2015 08:34:00 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</body>
+</html>

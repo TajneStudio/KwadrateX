@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Ar_acl</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Ar_acl</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ar_acl</p>
+<p class="description"><p>Access control library</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Ardinoto Wahono</li>
+				<li><span class="field">version:</span> 1.0.0</li>
+				<li><span class="field">copyright:</span> Copyright (c) 2009 Ardinoto Wahono</li>
+				<li><span class="field">copyright:</span> <p>Copyright (c) Wiredesignz &amp; Maxximus 2009-10-03</p><p>Permission is hereby granted, free of charge, to any person obtaining a copy  of this software and associated documentation files (the &quot;Software&quot;), to deal  in the Software without restriction, including without limitation the rights  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  copies of the Software, and to permit persons to whom the Software is  furnished to do so, subject to the following conditions:</p><p>The above copyright notice and this permission notice shall be included in  all copies or substantial portions of the Software.</p><p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN  THE SOFTWARE.</p></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_application---libraries---Ar_acl.php.html">/application/libraries/Ar_acl.php</a> (line <span class="field">32</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																												
+												<div class="method-definition">
+											<span class="method-result">Ar_acl</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#check_acl" title="details" class="method-name">check_acl</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#current_uri" title="details" class="method-name">current_uri</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$uri</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_key_id_sess" title="details" class="method-name">get_key_id_sess</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$config_vpp_page</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$filter_page</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_role_id" title="details" class="method-name">get_role_id</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#is_admin" title="details" class="method-name">is_admin</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#is_allowed" title="details" class="method-name">is_allowed</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$current_page</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$role_id</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$config_page</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$config_vpp_page</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#segments_filter" title="details" class="method-name">segments_filter</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$current_page</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$config_page</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$config_vpp_page</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#vpp_check" title="details" class="method-name">vpp_check</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$config_vpp_page</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$filter_page</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">34</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">Ar_acl</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcheck_acl" id="check_acl"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">check_acl</span> (line <span class="line-number">55</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">check_acl</p>
+<p class="description"><p>Ar_acl control logic</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			check_acl
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcurrent_uri" id="current_uri"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">current_uri</span> (line <span class="line-number">200</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get current_uri  Also remove index or index.php from uri</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			current_uri
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$uri</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$uri</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_key_id_sess" id="get_key_id_sess"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_key_id_sess</span> (line <span class="line-number">167</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get key id from session  In common, key id is user_id or username</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_key_id_sess
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$config_vpp_page</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$filter_page</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$config_vpp_page</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$filter_page</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_role_id" id="get_role_id"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_role_id</span> (line <span class="line-number">152</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get role_id</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_role_id
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodis_admin" id="is_admin"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_admin</span> (line <span class="line-number">182</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get is_admin</p>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			is_admin
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodis_allowed" id="is_allowed"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_allowed</span> (line <span class="line-number">81</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ar_acl general check</p>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			is_allowed
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$current_page</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$role_id</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$config_page</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$config_vpp_page</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$current_page</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$role_id</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$config_page</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$config_vpp_page</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsegments_filter" id="segments_filter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">segments_filter</span> (line <span class="line-number">222</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Filter current uri so that sub module or sub controller also can be controlled</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> bool</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			segments_filter
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$current_page</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$config_page</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$config_vpp_page</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$current_page</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$config_page</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$config_vpp_page</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodvpp_check" id="vpp_check"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">vpp_check</span> (line <span class="line-number">270</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">vpp_check  Compare key id session with key id from uri</p>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			vpp_check
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$config_vpp_page</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$filter_page</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$config_vpp_page</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$filter_page</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 02 Jun 2015 08:33:13 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

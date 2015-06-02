@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class gra_model</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class gra_model</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Klasa jest modelem GRY</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Lukasz Flak</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_application---modules---gra---models---gra_model.php.html">/application/modules/gra/models/gra_model.php</a> (line <span class="field">10</span>)
+		</p>
+		
+				
+		<pre><a href="../../CodeIgniter/Libraries/CI_Model.html">CI_Model</a>
+   |
+   --gra_model</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																				
+												<div class="method-definition">
+											<span class="method-result">gra_model</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#czy_gracz_posiada_stworka" title="details" class="method-name">czy_gracz_posiada_stworka</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#dodaj_pierwszego_stworka" title="details" class="method-name">dodaj_pierwszego_stworka</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#dodaj_stworka" title="details" class="method-name">dodaj_stworka</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#losuj_kolor" title="details" class="method-name">losuj_kolor</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#pobeirz_stworek_id_po_user_id" title="details" class="method-name">pobeirz_stworek_id_po_user_id</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#pobierz_dane_stworka" title="details" class="method-name">pobierz_dane_stworka</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#pobierz_ekwipunek_id_z_slota" title="details" class="method-name">pobierz_ekwipunek_id_z_slota</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nazwa_kolumny</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#pobierz_ekwipunek_stworka" title="details" class="method-name">pobierz_ekwipunek_stworka</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#pobierz_pojedyncze_ubranie_stworka" title="details" class="method-name">pobierz_pojedyncze_ubranie_stworka</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$ekwipunek_id</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#ustaw_slot_ekwipunku" title="details" class="method-name">ustaw_slot_ekwipunku</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$kolumna_ekwipunek_id</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$ekwipunek_id_pobrany</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#zapisz_dane_stworka" title="details" class="method-name">zapisz_dane_stworka</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$dane_json</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">15</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">gra_model</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../CodeIgniter/Libraries/CI_Model.html#method__construct">CI_Model::__construct()</a></dt>
+						<dd>Constructor</dd>
+					</dl>
+			
+	</div>
+<a name="methodczy_gracz_posiada_stworka" id="czy_gracz_posiada_stworka"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">czy_gracz_posiada_stworka</span> (line <span class="line-number">193</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			czy_gracz_posiada_stworka
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddodaj_pierwszego_stworka" id="dodaj_pierwszego_stworka"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">dodaj_pierwszego_stworka</span> (line <span class="line-number">165</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			dodaj_pierwszego_stworka
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddodaj_stworka" id="dodaj_stworka"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">dodaj_stworka</span> (line <span class="line-number">175</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			dodaj_stworka
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlosuj_kolor" id="losuj_kolor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">losuj_kolor</span> (line <span class="line-number">171</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			losuj_kolor
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodpobeirz_stworek_id_po_user_id" id="pobeirz_stworek_id_po_user_id"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">pobeirz_stworek_id_po_user_id</span> (line <span class="line-number">153</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			pobeirz_stworek_id_po_user_id
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodpobierz_dane_stworka" id="pobierz_dane_stworka"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">pobierz_dane_stworka</span> (line <span class="line-number">85</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			pobierz_dane_stworka
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodpobierz_ekwipunek_id_z_slota" id="pobierz_ekwipunek_id_z_slota"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">pobierz_ekwipunek_id_z_slota</span> (line <span class="line-number">73</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			pobierz_ekwipunek_id_z_slota
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nazwa_kolumny</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nazwa_kolumny</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodpobierz_ekwipunek_stworka" id="pobierz_ekwipunek_stworka"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">pobierz_ekwipunek_stworka</span> (line <span class="line-number">133</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			pobierz_ekwipunek_stworka
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodpobierz_pojedyncze_ubranie_stworka" id="pobierz_pojedyncze_ubranie_stworka"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">pobierz_pojedyncze_ubranie_stworka</span> (line <span class="line-number">115</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			pobierz_pojedyncze_ubranie_stworka
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$ekwipunek_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user_id</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$ekwipunek_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodustaw_slot_ekwipunku" id="ustaw_slot_ekwipunku"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">ustaw_slot_ekwipunku</span> (line <span class="line-number">45</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			ustaw_slot_ekwipunku
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$kolumna_ekwipunek_id</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$ekwipunek_id_pobrany</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$kolumna_ekwipunek_id</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$ekwipunek_id_pobrany</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodzapisz_dane_stworka" id="zapisz_dane_stworka"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">zapisz_dane_stworka</span> (line <span class="line-number">20</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			zapisz_dane_stworka
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$user_id</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$dane_json</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user_id</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$dane_json</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../CodeIgniter/Libraries/CI_Model.html">CI_Model</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Model.html#method__construct">CI_Model::__construct()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 02 Jun 2015 08:33:30 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>
